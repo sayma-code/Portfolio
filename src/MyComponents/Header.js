@@ -1,15 +1,35 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
+import {useState} from 'react';
 
 export default function Header() {
+
+  const [isShown, setIsShown] = useState(false);
+
+  const handleClick = event => {
+    setIsShown(current => !current);
+  };
+
   return (
-    <div>Header
+    <div className='secone'>
     <nav>
-    <div class="list">
-        <ul>
-            <li><a href="#works">Works</a></li>
-            <li><a href="#contact">Say Hello</a></li>
-        </ul>
+    <div className='right'>
+      <div  onClick={handleClick}>
+        <FontAwesomeIcon icon={faBars} size="3x"/>
+      </div>
     </div>
-    </nav></div>
+    {isShown && (
+        <div className= 'first'>
+          <h1><a href="#work">Work</a></h1>
+          <h1><a href="#sayhello">Say Hello</a></h1>
+        </div>
+      )}
+    </nav>
+    <section className="home">
+    <img className="head" src="images/head.png" alt="header"/>
+    </section>
+    {/* About Section */}
+    </div>
   )
 }

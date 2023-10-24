@@ -4,23 +4,15 @@ export default function Body() {
   return (
     <div>
         {/* Home Section */}
-    <section class="home">
-            <div class="intro">
-                <div class="text-1" dat-hover="It has been a pleasure connecting">Hello, I am Sayma</div>
-                <div class="text-2" data-hover="a programmer">a Software developer</div>
-                <img class="log" src="image/logo.png" alt="My Cartoon Face"/>
-                <div class="cafe"></div>
-                <div class="car"></div>
-            </div>
-    </section>
-    {/* About Section */}
-    <section class="about">
-            <div class="talk">
-                <div class="Atext-1">Hello, I am Sayma Obaida. Nice to meet you.</div>
-                <div class="Atext-2"> I build what interest me. I just started my journey after completing my graduation.
-                    Looking forward to tell a lots of stories in future.</div>
-              </div>
-    </section>
+        <section className="about">
+          <div className="talk1"><img className="talk1img" src="images/about(1).png" alt="drink a coffee"/></div>
+          <div className="talk2">
+              <div className="Atext-1">Hello, I am Sayma Obaida. Nice to meet you.</div>
+              <div className="Atext-2"> I build what interest me. I just started my journey after completing my graduation in 2020.
+              I worked as a full-stack developer for a company. Now I work on completion based projects. I work on both the front-end and the back-end.
+              Have a basic understanding of digital design. And I enjoy painting. </div>
+          </div>
+        </section>
     </div>
   )
 }

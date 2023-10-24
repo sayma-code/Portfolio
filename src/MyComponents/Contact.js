@@ -1,4 +1,8 @@
 import React from 'react'
+import { AiFillGithub } from "react-icons/ai";
+import { AiFillLinkedin } from "react-icons/ai";
+import { MdEmail } from "react-icons/md";
+
 
 export default function Contact() {
   return (
@@ -13,13 +17,13 @@ export default function Contact() {
             
             <div className="ico">
                 <label className="red">
-                    <i className="fab fa-reddit"></i>
+                    <AiFillGithub />
                 </label>
                 <label className="git">
-                    <i className="fab fa-github"></i>
+                    <AiFillLinkedin />
                 </label>
                 <label className="link">
-                    <i className="fab fa-linkedin-in"></i>
+                    <MdEmail />
                 </label>
             </div>
         </div>
