@@ -1,529 +1,372 @@
-@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Lobster+Two&family=Poppins:wght@300&family=Roboto:wght@300&family=Teko:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Mukta:wght@200;300;400;500;600;700;800&family=Noto+Serif:ital,wght@1,700&family=Roboto+Slab:wght@900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Lobster+Two&family=Poppins:wght@300&family=Roboto:wght@300&family=Teko:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Gothic&family=Mukta:wght@200;300;400;500;600;700;800&family=Noto+Serif:ital,wght@1,700&family=Roboto+Slab:wght@900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-*{
-    
-    /* #bfa8d6 */
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
+* {
+  /* #bfa8d6 */
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
 }
 /* 
 
-#d5ccdf
+white-lavendar - #d5ccdf
 white - f0edf2
-green = c0edb4
-c2a4f3
-yellow = f0b1a0
-99ccff */
-/*     font-family: 'League Gothic', sans-serif;
-
+green - c0edb4
+bright-lavendar - c2a4f3
+yellow - f0b1a0
+blue - 99ccff */
+/*     
+    font-family: 'League Gothic', sans-serif;
     font-family: 'Mukta', sans-serif;
-
     font-family: 'Noto Serif', serif;
-
     font-family: 'Roboto', sans-serif;
-
-    font-family: 'Roboto Slab', serif; */
-.secone{
-    background: #e9d7fc;
-}
-.secone .right{
-    z-index: 100;
-    float: right;
-    
-    color: #f0edf2;
-    position: relative;
-    background: #bfa8d6;
-}
-.secone  .first{
-    z-index: 5;
+    font-family: 'Roboto Slab', serif; 
+    font-family: "Teko", sans-serif;
     font-family: Montserrat, sans-serif;
-    float: right;
-    background: #bfa8d6;
-    right: 0;
-    padding: 5rem;
-    border-radius: 25px;
-    position: absolute;
-} 
-.secone .first h1 {
-    background: #bfa8d6;
-    font-size: 30px;
-    text-transform: uppercase;
-    padding: 1rem;
+    font-family: "Lobster Two", cursive;
+    
+*/
+.header {
+  background: #e9d7fc;
 }
-.secone .first h1 a{
-    background: #bfa8d6;
-    text-decoration: none;
-    color: #f0edf2;
+.header .right {
+  z-index: 100;
+  float: right;
+  color: #f0edf2;
+  position: relative;
+  background: #bfa8d6;
+}
+.header .first {
+  z-index: 5;
+  font-family: Montserrat, sans-serif;
+  float: right;
+  background: #bfa8d6;
+  right: 0;
+  padding: 5rem;
+  border-radius: 25px;
+  position: absolute;
+}
+.header .first h1 {
+  background: #bfa8d6;
+  font-size: 30px;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+.header .first h1 a {
+  background: #bfa8d6;
+  text-decoration: none;
+  color: #f0edf2;
 }
 /* Styles applied on trigger */
-.secone .first:target h1 a{
-    animation: 2s fadeIn forwards .5s;
+.header .first:target h1 a {
+  animation: 2s fadeIn forwards 0.5s;
 }
 
-
 /*Home*/
-.secone .head{
-    display: block;
-    width: auto;
-    height: auto;
+.header .main-image {
+  width: auto;
+  height: auto;
+}
+.down-background{
+  background-color: #f0edf2;
+}
+.down{
+  width: 100%;
+  
 }
 
 /*About*/
 
-.about{
-    background: #f0edf2;
-    height: 800px;
-    display: flex;
+ .about {
+  background: #f0edf2;
+  height: 800px;
+  display: flex;
 }
-.about .talk1{
-    margin-left: 10%;
+.about .body-image {
+  margin-left: 10%;
 }
-.about .talk1 .talk1img{
-    width: 50rem;
+#image-section2 {
+  width: 50rem;
 }
 
-.about .talk2{
-    text-align: center;
-    width: 30rem;
-    margin: 10%;
+.about .talk2 {
+  text-align: center;
+  width: 30rem;
+  margin: 10%;
 }
-.about .talk2 .Atext-1{
-    padding-bottom: 10px;
-    font-family: 'Mukta', sans-serif;
-    font-size: 30px;
-    color: rgb(65, 64, 65);
-    font-weight: 900px;
-    
+.about .talk2 .Atext-1 {
+  padding-bottom: 10px;
+  font-family: "Mukta", sans-serif;
+  font-size: 30px;
+  color: rgb(65, 64, 65);
+  font-weight: 900px;
 }
-.about .talk2 .Atext-2{
-    padding-bottom: 50px;
-    font-family: 'Mukta', sans-serif;
-    color: rgb(65, 64, 65);
-    font-size: 20px;
-} */
-/*Skills*/
+.about .talk2 .Atext-2 {
+  padding-bottom: 50px;
+  font-family: "Mukta", sans-serif;
+  color: rgb(65, 64, 65);
+  font-size: 20px;
+}
 
-.skills{
-    background: #ff9336;
-
-}
-.skills .project{
-    font-family: 'Lobster Two', cursive;
-    font-size: 30px;
-    text-align: center;
-    padding-top: 3%;
-}
-.skills .content{
-    display: inline-flex;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    margin-left: 20%;
-}
-.skills .content .card{
-    width: calc(33%-20px);
-    color: black;
-    background: whitesmoke;
-    text-align: center;
-    border-radius: 6px;
-    padding: 20px 25px;
-    cursor: pointer;
-    margin: 20px;
-}
-.skills .content .card .box i{
-    font-size: 30px;
-    padding: 30px;
-    color: rgb(102, 173, 10);
-}
-.skills .content .card .box .stext-1{
-    font-family: 'Teko', sans-serif;
-    font-size: 30px;
-    padding-bottom: 5px;
-}
-.skills .content .card .box .stext-2{
-    font-family: 'Lobster Two', cursive;
-    font-size: 18px;
-    padding-bottom: 5px;
-    padding-top: 20px;
-}
-.skills .content .card .box .stext-3{
-    font-size: 15px;
-    padding-bottom: 5px;
-}
-.skills .content .card .box .stext-4{
-    font-family: 'Lobster Two', cursive;
-    font-size: 18px;
-    padding-bottom: 5px;
-    padding-top: 20px;
-}
-.skills .content .card .box .stext-5{
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px;
-    padding-bottom: 5px;
-}
 /*Work*/
+/* #wrapper{
+  position: relative;
+} */
 .works{
-    text-align: justify;
-    -ms-text-justify: distribute-all-lines;
-    text-justify: distribute-all-lines;
-    width:100%;
-    margin-left: 10%;
+  padding: 10px;
 }
-
+.works .works-content{
+  margin: 5%;
+}
 .works .items{
-    background: #f0b1a0;
-    padding: 2px;
-    width: 20rem;
-    margin: 1rem;
-    display: inline-block;
-}
-.works .items .folderLink{
-    float: right;
+  text-align: center;
 }
 .works .items .workimage{
-    width: 20rem;
-    height: auto;
+  width: 350px;
+  transition: all .8s ease;
+
+}
+.works .items .workimage:hover{
+  transform: scale(0.9) rotate(-3deg);
+}
+.works .items .work-header{
+  font-family: 'Roboto', sans-serif;
+  font-size: larger;
+  padding: 0;
+  padding-top: 20px;
+}
+.works .items .work-type{
+  font-family: "Teko", sans-serif;
+  padding: 0;
 }
 
 /*Contact*/
-.contact{
-    display: block;
-    height: 500px; 
+.back{
+  width: 100%;
 }
-.contact .con{
-    padding: 30px; 
+.contact {
+  background-color: #e9d7fc;
+}
+.contact .con {
+  padding: 30px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.contact .con .frn {
+  padding: 25px;
+  font-family: "Lobster Two", cursive;
+}
+.contact .con .frn .frnl {
+  text-align: center;
+  font-size: 30px;
+}
+.contact .con .frn .conta {
+  font-size: 50px;
+  background-color: #000;
+  border: none;
+  margin-top: 30px;
+}
+.contact .con .frn .conta a {
+  color: white;
+  padding: 10px;
+  font-family: "Teko", sans-serif;
+}
+.contact p {
+  padding-top: 50px;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Lobster Two", cursive;
+}
+.contact .ico {
+  font-family: "Teko", sans-serif;
+  font-size: 20px;
+}
+.contact .in {
+  color: white;
+}
+@media (max-width: 900px) {
+  .list {
+    height: 100px;
+    margin-left: 25%;
+  }
+  #image-section {
+    width: 100%;
+    height: auto;
+  }
+  #image-section2 {
+    width: 80%;
+    height: auto;
+  }
+
+  .about .body-image {
+    max-width: 700px;
+    min-width: 400px;
+  }
+  .about .talk2 {
     text-align: center;
+    width: 80%;
+    margin: 10%;
+  }
+  .movement-about{
+    width: 100%;
+  }
+}
+@media (max-width: 829px) {
+  .list {
+    height: 100px;
+    margin-left: 15%;
+  }
+}
+@media (max-width: 500px) {
+  nav {
+    height: 80px;
+  }
+  .list li {
+    display: inline-block;
+    margin: 0 10px;
+    line-height: 80px;
+  }
+  .list li a {
+    font-size: 15px;
+  }
+  .home {
+    display: block;
+    width: 100%;
+    height: 800px;
+  }
+  .home .intro {
+    text-align: center;
+  }
+  .home .intro .text-1 {
+    text-align: center;
+    font-family: "Akaya Telivigala", cursive;
+    font-size: 40px;
+    padding-bottom: 20px;
+  }
+  .home .intro .text-1:hover {
+    font-size: 0px;
+  }
+
+  .home .intro .text-1:hover:after {
+    content: attr(dat-hover);
+    font-family: "Akaya Telivigala", cursive;
+    font-size: 40px;
+    padding-bottom: 20px;
+  }
+
+  .home .intro .text-2 {
+    font-family: "Lobster Two", cursive;
+    font-size: 20px;
+    padding-bottom: 30px;
+  }
+  .home .intro .text-2:hover {
+    font-size: 0px;
+  }
+  .home .intro .text-2:hover:after {
+    content: attr(data-hover);
+    font-family: "Lobster Two", cursive;
+    font-size: 20px;
+    padding-bottom: 30px;
+  }
+  .home .intro .log {
+    border-radius: 50%;
+    border-width: 5px;
+  }
+
+  .about {
+    display: block;
+    height: 800px;
+  }
+  .about .talk {
+    text-align: center;
+    width: 200px;
+    margin-left: 20%;
+    padding-top: 100px;
+  }
+  .about .talk .Atext-1 {
+    text-align: center;
+    padding-bottom: 10px;
+    font-family: "Teko", sans-serif;
+    font-size: 30px;
+    font-weight: 900px;
+  }
+  .about .talk .Atext-2 {
+    padding-bottom: 50px;
+    font-family: "Lobster Two", cursive;
+    font-size: 20px;
+  }
+  /*Contact*/
+  .contact {
+    background-color: #7e7e7e;
+    display: block;
+    height: 500px;
+  }
+  .contact .con {
+    padding: 30px;
+    text-align: center;
+    padding-top: 10rem;
     justify-content: center;
     align-items: center;
-}
-.contact .con .frn{
-    padding: 25px;  
-    font-family: 'Lobster Two', cursive;
-}
-.contact .con .frn .frnl{
+  }
+  .contact .con .frn {
+    padding: 30px;
+  }
+  .contact .pad {
+    margin-top: 20rem;
+  }
+  .contact .pad p {
     text-align: center;
-    font-size: 30px;
+    font-size: 15px;
+  }
+  .contact .pad .in {
+    font-family: "Teko", sans-serif;
+    font-size: 20px;
+  }
 }
-.contact .con .frn .conta{
-    font-size: 50px;
-    background-color: #000;
-    border: none;
-    margin-top: 30px;  
-}
-.contact .con .frn .conta a{
-    color: white;  
-    padding: 10px;
-    font-family: 'Teko', sans-serif;
-}
-.contact p{
-    padding-top: 50px;
+@media (max-width: 400px) {
+  nav {
+    height: 50px;
+    width: 100%;
+  }
+  .list {
+    margin-left: 10%;
+  }
+  .list li {
+    display: inline-block;
+    margin: 0 10px;
+    line-height: 50px;
+  }
+  .list li a {
+    font-size: 11px;
+    font-weight: 900;
+  }
+  .skills .content {
+    display: block;
+    padding-top: 40px;
+    padding-bottom: 40px;
     text-align: center;
-    font-size: 20px;
-    font-family: 'Lobster Two', cursive;
+    margin-left: 2%;
+  }
 }
-.contact .ico{
-    font-family: 'Teko', sans-serif;
-    font-size: 20px;
-}
-.contact .in{
-    color: white;  
-}
-@media(max-width:900px)
-{
-    .list{
-        height:100px;
-        margin-left: 25%;
-    } 
-}
-@media(max-width:829px)
-{
-    .list{
-        height:100px;
-        margin-left: 15%;
-    } 
-}
-@media(max-width:500px)
-{
-    nav{
-        height: 80px;
-    }
-    .list li{
-        display: inline-block;
-        margin: 0 10px;
-        line-height: 80px;
-    } 
-    .list li a{
-        font-size: 15px;
-
-    }
-    .home{
-        display: block;
-        width: 100%;
-        height: 800px;
-    }
-    .home .intro{
-        text-align: center;
-    
-    }
-    .home .intro .text-1{
-        text-align: center;
-        font-family: 'Akaya Telivigala', cursive;
-        font-size: 40px;
-        padding-bottom: 20px;
-    }
-    .home .intro .text-1:hover{
-        font-size: 0px;
-    }
-    
-    .home .intro .text-1:hover:after{
-        content: attr(dat-hover);
-        font-family: 'Akaya Telivigala', cursive;
-        font-size: 40px;
-        padding-bottom: 20px;
-    }
-    
-    .home .intro .text-2{
-        font-family: 'Lobster Two', cursive;
-        font-size: 20px;
-        padding-bottom: 30px;
-    }
-    .home .intro .text-2:hover{
-        font-size: 0px;
-    }
-    .home .intro .text-2:hover:after{
-        content: attr(data-hover);
-        font-family: 'Lobster Two', cursive;
-        font-size: 20px;
-        padding-bottom: 30px;
-    }
-    .home .intro .log{
-        border-radius: 50%;
-        border-width:5px;  
-    }
-    
-    /* .home .intro .car{
-        height: 512px;
-        width: 512px;
-        float: right;
-        right: -400px;
-        display: block;
-        background-image: url("./images/car.png");
-        position: absolute;
-        background-repeat: repeat-x;
-        animation: car 5s linear infinite;
-    }
-    @keyframes car{
-        100%{
-            transform: translateX(-3400px);
-        }
-    }
-    .home .intro .cafe{
-        display: none;
-    } */
-    .about{
-        display: block;
-        height: 800px;
-    }
-    .about .talk{
-        text-align: center;
-        width: 200px;
-        margin-left: 20%;
-        padding-top: 100px;
-    }
-    .about .talk .Atext-1{
-        text-align: center;
-        padding-bottom: 10px;
-        font-family: 'Teko', sans-serif;
-        font-size: 30px;
-        font-weight: 900px;
-        
-    }
-    .about .talk .Atext-2{
-        padding-bottom: 50px;
-        font-family: 'Lobster Two', cursive;
-        font-size: 20px;
-    }
-    .skills{
-        background: #ff9336;
-    
-    }
-    .skills .project{
-        font-family: 'Lobster Two', cursive;
-        font-size: 30px;
-        text-align: center;
-        padding-top: 3%;
-    }
-    .skills .content{
-        display: block;
-        padding-top: 40px;
-        padding-bottom: 40px;
-        text-align: center;
-        margin-left: 5%;
-    }
-    .skills .content .card{
-        width: calc(33%-20px);
-        color: black;
-        background: whitesmoke;
-        text-align: center;
-        border-radius: 6px;
-        padding: 20px 25px;
-        cursor: pointer;
-        margin: 20px;
-    }
-    .skills .content .card .box i{
-        font-size: 30px;
-        padding: 30px;
-        color: rgb(102, 173, 10);
-    }
-    .skills .content .card .box .stext-1{
-        font-family: 'Teko', sans-serif;
-        font-size: 30px;
-        padding-bottom: 5px;
-    }
-    .skills .content .card .box .stext-2{
-        font-family: 'Lobster Two', cursive;
-        font-size: 18px;
-        padding-bottom: 5px;
-        padding-top: 20px;
-    }
-    .skills .content .card .box .stext-3{
-        font-size: 15px;
-        padding-bottom: 5px;
-    }
-    .skills .content .card .box .stext-4{
-        font-family: 'Lobster Two', cursive;
-        font-size: 18px;
-        padding-bottom: 5px;
-        padding-top: 20px;
-    }
-    .skills .content .card .box .stext-5{
-        font-family: 'Poppins', sans-serif;
-        font-size: 15px;
-        padding-bottom: 5px;
-    }
-    /*Work*/
-    .works{
-        background-color:  #2b5a80;
-        height: 700px;
-    }
-    .works .project{
-        font-family: 'Lobster Two', cursive;
-        font-size: 30px;
-        text-align: center;
-        padding-top: 3%;
-    }
-    .works .carousel{
-        margin-top: 5em;
-        display: block;
-        border-radius: 6px;
-        padding: 25px 35px;
-        align-items: center;
-        justify-content: center;
-        transition: all 0.3s ease;
-        background-color: #0c3c5d;
-    }
-    .works .carousel .items{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .works .carousel .items img{
-        flex-direction: column;
-        align-items: center;
-        width: 400px;
-        height: 250px;
-        margin-left: 15%;
-        text-align: center;
-        padding: 20px;
-        padding-top: 40px;
-    
-    }
-    .works .carousel .items p{
-        font-family: 'Teko', sans-serif;
-        font-size: 20px;
-        text-align: center;
-        padding-bottom: 20px;
-    }
-    
-    .owl-dots{
-        display: none;
-    }
-    /*Contact*/
-    .contact{
-        background-color: #7e7e7e;
-        display: block;
-        height: 500px; 
-    }
-    .contact .con{
-        padding: 30px; 
-        text-align: center;
-        padding-top: 10rem;
-        justify-content: center;
-        align-items: center;
-    }
-    .contact .con .frn{
-        padding: 30px;    
-    }
-    .contact .pad{
-        margin-top: 20rem;
-    }
-    .contact .pad p{
-        text-align: center;
-        font-size: 15px;
-    }
-    .contact .pad .in{
-        font-family: 'Teko', sans-serif;
-        font-size: 20px;
-    }
-    
-
-}
-@media(max-width:400px)
-{
-    nav{
-        height: 50px;
-        width: 100%;
-    }
-    .list{
-        margin-left: 10%;
-    } 
-    .list li{
-        display: inline-block;
-        margin: 0 10px;
-        line-height: 50px;
-    } 
-    .list li a{
-        font-size: 11px;
-        font-weight: 900;
-    } 
-    .skills .content{
-        display: block;
-        padding-top: 40px;
-        padding-bottom: 40px;
-        text-align: center;
-        margin-left: 2%;
-    }
-}
-@media(max-width:300px)
-{
-    nav{
-        height: 50px;
-        width: 100%;
-    }
-    .list{
-        margin-left: 7%;
-    } 
-    .list li{
-        display: inline-block;
-        margin: 0 5px;
-        line-height: 50px;
-    } 
-    .list li a{
-        font-size: 10px;
-        font-weight: 600;
-    } 
+@media (max-width: 300px) {
+  nav {
+    height: 50px;
+    width: 100%;
+  }
+  .list {
+    margin-left: 7%;
+  }
+  .list li {
+    display: inline-block;
+    margin: 0 5px;
+    line-height: 50px;
+  }
+  .list li a {
+    font-size: 10px;
+    font-weight: 600;
+  }
 }
