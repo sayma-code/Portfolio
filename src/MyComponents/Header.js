@@ -12,36 +12,29 @@ export default function Header() {
 
   return (
     <div>
-    <div className="header">
-      <nav>
-        <div className="right">
-          <div onClick={handleClick}>
-            <FontAwesomeIcon icon={faBars} size="3x" />
+      <div className="header">
+        <nav>
+          <div className="right">
+            <div onClick={handleClick}>
+              <FontAwesomeIcon icon={faBars} size="3x" />
+            </div>
           </div>
-        </div>
-        {isShown && (
-          <div className="first">
-            <h1>
-              <a href="#work">Work</a>
-            </h1>
-            <h1>
-              <a href="#sayhello">Say Hello</a>
-            </h1>
-          </div>
-        )}
-      </nav>
-      <section className="home">
-        <div className="header-image">
-          <img src="images/head.png" alt="header" id="image-section" />
-        </div>
-      </section>
-      {/* About Section */}
-      
-    </div>
-    <div className="down-background">
-    <img className="down" src="images/header-img.png" alt="drink a coffee" />
-    </div>
-    
+          {isShown && (
+            <div className="first">
+              <h1>
+                <a href="#work">Work</a>
+              </h1>
+              <h1>
+                <a href="#sayhello">Say Hello</a>
+              </h1>
+            </div>
+          )}
+        </nav>
+        <section className="home">
+            <img src="images/head.png" className="home-image" alt="header" id="image-section" />
+        </section>
+        {/* About Section */}
+      </div>
     </div>
   );
 }
