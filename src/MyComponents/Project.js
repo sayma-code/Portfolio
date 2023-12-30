@@ -7,32 +7,51 @@ import Col from "react-bootstrap/Col";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 
+function MydModalWithGrid(props) {
+  return (
+    <Modal {...props} dialogClassName="modal-dialog" contentClassName="modal-content">
+      <Modal.Header closeButton>
+        </Modal.Header>
+      <Modal.Body className="grid-example">
+        <Container>
+          <Row>
+            <Col xs={12} md={8} sm={12}>
+              <img
+                className="image"
+                src="images/OMS.png"
+                alt="drink a coffee"
+              />
+            </Col>
+            <Col xs={6} md={4} sm={12}>
+              <h1>OMS(Office Management System)</h1>
+              <p></p>
+              <Button onClick={props.onHide}>View</Button>
+            </Col>
+          </Row>
+        </Container>
+      </Modal.Body>
+    </Modal>
+  );
+}
+
 export default function Project() {
-  const [xlShow, setXlShow] = useState(false);
+  const [modalShow, setModalShow] = useState(false);
   return (
     <Container fluid className="works" id="work">
       <Row className="works-content justify-content-md-center">
         <Col xs={12} xxl={3} xl={3} lg={4} md={6} sm={12} className="items">
           <img
-            onClick={() => setXlShow(true)}
+            variant="primary"
+            onClick={() => setModalShow(true)}
             className="workimage"
             src="images/work-1.png"
             alt="drink a coffee"
           />
-          <Modal
-            size="xl"
-            show={xlShow}
-            onHide={() => setXlShow(false)}
-            aria-labelledby="example-modal-sizes-title-lg"
-          >
-            <Modal.Header closeButton>
-              <Modal.Title id="example-modal-sizes-title-lg">
-                Large Modal
-              </Modal.Title>
-            </Modal.Header>
-            <Modal.Body>...</Modal.Body>
-          </Modal>
 
+          <MydModalWithGrid
+            show={modalShow}
+            onHide={() => setModalShow(false)}
+          />
           <div className="work-header">ERP Project</div>
           <div className="work-type">Angular</div>
         </Col>

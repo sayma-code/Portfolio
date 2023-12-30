@@ -11,10 +11,10 @@
   border: none;
 }
 
-html, body {
+/* html, body {
   height: 100%;
   width: 100%;
-}
+} */
 /* 
 
 white-lavendar - #d5ccdf
@@ -145,9 +145,14 @@ blue - 99ccff */
   font-family: "Teko", sans-serif;
   padding: 0;
 }
-.my-modal {
-  width: 90vw;    /* Occupy the 90% of the screen width */
-  max-width: 90vw;
+
+.modal-dialog{
+  min-width: 70%; 
+}
+.modal-content .image{
+  display: block;
+  height: auto;
+  max-width: 100%
 }
 /*Contact*/
 
