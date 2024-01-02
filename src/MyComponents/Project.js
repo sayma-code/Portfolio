@@ -7,11 +7,14 @@ import Col from "react-bootstrap/Col";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 
-function MydModalWithGrid(props) {
+function MydModalWithGrid1(props) {
   return (
-    <Modal {...props} dialogClassName="modal-dialog" contentClassName="modal-content">
-      <Modal.Header closeButton>
-        </Modal.Header>
+    <Modal
+      {...props}
+      dialogClassName="modal-dialog"
+      contentClassName="modal-content"
+    >
+      <Modal.Header closeButton></Modal.Header>
       <Modal.Body className="grid-example">
         <Container>
           <Row>
@@ -24,6 +27,35 @@ function MydModalWithGrid(props) {
             </Col>
             <Col xs={6} md={4} sm={12}>
               <h1>OMS(Office Management System)</h1>
+              <p></p><a href="https://oms.minhazul.com/">
+              <Button>Visit Site</Button></a>
+            </Col>
+          </Row>
+        </Container>
+      </Modal.Body>
+    </Modal>
+  );
+}
+function MydModalWithGrid2(props) {
+  return (
+    <Modal
+      {...props}
+      dialogClassName="modal-dialog"
+      contentClassName="modal-content"
+    >
+      <Modal.Header closeButton></Modal.Header>
+      <Modal.Body className="grid-example">
+        <Container>
+          <Row>
+            <Col xs={12} md={8} sm={12}>
+              <img
+                className="image"
+                src="images/Consultancy.png"
+                alt="drink a coffee"
+              />
+            </Col>
+            <Col xs={6} md={4} sm={12}>
+              <h1>CRM(Customer Management Softare)</h1>
               <p></p>
               <Button onClick={props.onHide}>View</Button>
             </Col>
@@ -33,39 +65,43 @@ function MydModalWithGrid(props) {
     </Modal>
   );
 }
-
 export default function Project() {
-  const [modalShow, setModalShow] = useState(false);
+  const [modalShow1, setModalShow1] = useState(false);
+  const [modalShow2, setModalShow2] = useState(false);
   return (
     <Container fluid className="works" id="work">
       <Row className="works-content justify-content-md-center">
         <Col xs={12} xxl={3} xl={3} lg={4} md={6} sm={12} className="items">
           <img
             variant="primary"
-            onClick={() => setModalShow(true)}
+            onClick={() => setModalShow1(true)}
             className="workimage"
             src="images/work-1.png"
             alt="drink a coffee"
           />
 
-          <MydModalWithGrid
-            show={modalShow}
-            onHide={() => setModalShow(false)}
+          <MydModalWithGrid1
+            show={modalShow1}
+            onHide={() => setModalShow1(false)}
           />
-          <div className="work-header">ERP Project</div>
+          <div className="work-header">ERP</div>
           <div className="work-type">Angular</div>
         </Col>
         <Col xs={12} xxl={3} xl={3} lg={4} md={6} sm={12} className="items">
           <div className="items">
-            <a href="http://vegabondit.com/">
-              <img
-                className="workimage"
-                src="images/work-2.png"
-                alt="drink a coffee"
-              />
-            </a>
-            <div className="work-header">Question</div>
-            <div className="work-type">Laravel, Angular</div>
+            <img
+              variant="primary"
+              onClick={() => setModalShow2(true)}
+              className="workimage"
+              src="images/work-2.png"
+              alt="drink a coffee"
+            />
+            <MydModalWithGrid2
+              show={modalShow2}
+              onHide={() => setModalShow2(false)}
+            />
+            <div className="work-header">CRM</div>
+            <div className="work-type">Laravel, bootstrap</div>
           </div>
         </Col>
         <Col xs={12} xxl={3} xl={3} lg={4} md={6} sm={12} className="items">
