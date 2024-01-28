@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import Lottie from "lottie-react";
-import animationData from "../assets/animation_lnpcgfpj.json";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
