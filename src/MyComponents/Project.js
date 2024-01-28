@@ -27,7 +27,7 @@ function MydModalWithGrid1(props) {
             </Col>
             <Col xs={6} md={4} sm={12}>
               <h1>OMS(Office Management System)</h1>
-              <p></p><a href="https://oms.minhazul.com/">
+              <p></p><a href="https://oms.ennovify.com/">
               <Button>Visit Site</Button></a>
             </Col>
           </Row>
@@ -55,7 +55,7 @@ function MydModalWithGrid2(props) {
               />
             </Col>
             <Col xs={6} md={4} sm={12}>
-              <h1>CRM(Customer Management Softare)</h1>
+              <h1>CRM(Customer Management Software)</h1>
               <p></p>
               <Button onClick={props.onHide}>View</Button>
             </Col>
