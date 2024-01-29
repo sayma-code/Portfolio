@@ -30,7 +30,7 @@ export default function Header() {
             </div>
           )}
         </nav>
-        <section className="home">
+        <section className="home-image">
             <img src="images/head.png" className="home-image" alt="header" id="image-section" />
         </section>
         {/* About Section */}

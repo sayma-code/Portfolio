@@ -1,10 +1,13 @@
+import React from 'react'
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Contact from './MyComponents/Contact';
 import Header from './MyComponents/Header';
 import Body from './MyComponents/Body';
 import Project from './MyComponents/Project';
-import Contact from './MyComponents/Contact';
-import React from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Footer from './MyComponents/Footer';
+
+
 function App() {
   return (
   <>
@@ -12,6 +15,7 @@ function App() {
   <Body/>
   <Project/>
   <Contact/>
+  <Footer/>
   </>
   );
 }
