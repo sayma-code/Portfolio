@@ -31,10 +31,20 @@ export default function Header() {
           )}
         </nav>
         <section className="home-image">
-            <img src="images/head.png" className="home-image" alt="header" id="image-section" />
+          <img
+            src="images/head.png"
+            className="home-image"
+            alt="header"
+            id="image-section"
+          />
         </section>
         {/* About Section */}
       </div>
+      <img
+        className="head_image"
+        src="images/header_connector.png"
+        alt="drink a coffee"
+      />
     </div>
   );
 }

@@ -39,6 +39,7 @@ export default function Body() {
           </Col>
         </Row>
       </Container>
+      
     </div>
   );
 }

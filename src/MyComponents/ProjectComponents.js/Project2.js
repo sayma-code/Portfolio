@@ -18,8 +18,8 @@ function MydModalWithGrid1(props) {
           <Row>
             <Col xs={12} sm={12} md={8} lg={8} xl={8} xxl={8}>
               <img
-                className="project_image"
-                src="images/OMS.png"
+                className="project_image2"
+                src="images/Consultancy.png"
                 alt="drink a coffee"
               />
             </Col>
@@ -37,7 +37,7 @@ function MydModalWithGrid1(props) {
   );
 }
 
-export default function Project1() {
+export default function Project2() {
   const [modalShow1, setModalShow1] = useState(false);
   return (
     <div className="project_column_div">
@@ -47,13 +47,11 @@ export default function Project1() {
         className="project_image"
         src="images/work-1.png"
         alt="drink a coffee"
-      /> 
-      <MydModalWithGrid1
+      />
+     
+       <MydModalWithGrid1
         show={modalShow1}
         onHide={() => setModalShow1(false)}
-      />
-      <img
-        
       />
       <div className="work-header">ERP</div>
       <div className="work-type">Angular</div>

@@ -12,6 +12,15 @@ export default function Contact() {
       <Container fluid className="footer">
         <Row>
           <Col xs={12} md={6} lg={6} xl={6} xxl={6}>
+            <div>
+              <img
+                id="footer_image"
+                src="images/portfolio-bottom.png"
+                alt="drink a coffee"
+              />
+            </div>
+          </Col>
+          <Col xs={12} md={6} lg={6} xl={6} xxl={6}>
             <div className="footer_text">
               <div className="say_hello_div">
                 <h1 className="say_hello">Say Hello</h1>
@@ -25,26 +34,16 @@ export default function Contact() {
               </div>
 
               <div className="contact_icon">
-
                 <label className="icon">
                   <AiFillGithub size={50} />
                 </label>
                 <label className="icon">
-                  <AiFillLinkedin size={50}/>
+                  <AiFillLinkedin size={50} />
                 </label>
                 <label className="icon">
-                  <MdEmail size={50}/>
+                  <MdEmail size={50} />
                 </label>
               </div>
-            </div>
-          </Col>
-          <Col xs={12} md={6} lg={6} xl={6} xxl={6}>
-            <div>
-              <img
-                id="footer_image"
-                src="images/computer.png"
-                alt="drink a coffee"
-              />
             </div>
           </Col>
         </Row>

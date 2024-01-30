@@ -12,7 +12,7 @@
 
 @font-palette-values --HELLO {
   font-family: Rocher;
-  base-palette: 10;
+  base-palette: 3;
 }
 
 .body_header{
@@ -119,11 +119,11 @@
   line-height: 156px;
   font-size: 35px;
   font-family: 'Bungee', sans-serif;
-  background: linear-gradient(45deg, transparent 5%, #c0edb4 5%);
+  background: linear-gradient(45deg, transparent 5%, #99ccff 5%);
   border: 0;
   color: #fff;
   letter-spacing: 3px;
-  box-shadow: 3px 0px 0px #99ccff;
+  box-shadow: 5px 0px 0px #c2a4f3;
   outline: transparent;
   position: relative;
   user-select: none;
