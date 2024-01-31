@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Modal from "react-bootstrap/Modal";
-import Button from "react-bootstrap/Button";
+import { Button } from "react-bootstrap";
 
 function MydModalWithGrid1(props) {
   return (
@@ -20,14 +20,21 @@ function MydModalWithGrid1(props) {
               <img
                 className="project_image"
                 src="images/OMS.png"
-                alt="drink a coffee"
+                alt="project 1"
               />
             </Col>
-            <Col xs={12} sm={12}  md={4} lg={4} xl={4} xxl={4}>
-              <h1>OMS(Office Management System)</h1>
-              <p></p>
-              <a href="https://oms.ennovify.com/">
-                <Button>Visit Site</Button>
+            <Col xs={12} sm={12} md={4} lg={4} xl={4} xxl={4}>
+              <div className="body_header">Office Management System(OMS)</div>
+              <div className="adrella_text">
+                Worked on the frontend with Angular on an office management
+                software at{" "}
+                <a className="link" href="https://ennovify.com/">
+                  Ennovify
+                </a>
+                .
+              </div>
+              <a className="button_link" href="https://oms.ennovify.com/">
+                <Button className="project_button">Visit Site</Button>
               </a>
             </Col>
           </Row>
@@ -47,16 +54,13 @@ export default function Project1() {
         className="project_image"
         src="images/work-1.png"
         alt="drink a coffee"
-      /> 
+      />
       <MydModalWithGrid1
         show={modalShow1}
         onHide={() => setModalShow1(false)}
       />
-      <img
-        
-      />
-      <div className="work-header">ERP</div>
-      <div className="work-type">Angular</div>
-      </div>
+      <img />
+      <div className="peackok_heading">Office Management System</div>
+    </div>
   );
 }

@@ -20,14 +20,19 @@ function MydModalWithGrid1(props) {
               <img
                 className="project_image2"
                 src="images/Consultancy.png"
-                alt="drink a coffee"
+                alt="project 2"
               />
             </Col>
-            <Col xs={12} sm={12}  md={4} lg={4} xl={4} xxl={4}>
-              <h1>OMS(Office Management System)</h1>
-              <p></p>
-              <a href="https://oms.ennovify.com/">
-                <Button>Visit Site</Button>
+            <Col xs={12} sm={12} md={4} lg={4} xl={4} xxl={4}>
+              <div className="body_header">
+                Customer Relation Management Software(CRM)
+              </div>
+              <div className="adrella_text">
+                A consultancy firm needed software that would help them manage
+                and keep track of all the work.
+              </div>
+              <a className="button_link" href="https://oms.ennovify.com/">
+                <Button className="project_button">Visit Site</Button>
               </a>
             </Col>
           </Row>
@@ -48,13 +53,12 @@ export default function Project2() {
         src="images/work-1.png"
         alt="drink a coffee"
       />
-     
-       <MydModalWithGrid1
+
+      <MydModalWithGrid1
         show={modalShow1}
         onHide={() => setModalShow1(false)}
       />
-      <div className="work-header">ERP</div>
-      <div className="work-type">Angular</div>
-      </div>
+      <div className="peackok_heading">Customer Relation Management</div>
+    </div>
   );
 }

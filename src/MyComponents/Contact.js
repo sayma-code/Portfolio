@@ -25,6 +25,7 @@ export default function Contact() {
               <div className="say_hello_div">
                 <h1 className="say_hello">Say Hello</h1>
               </div>
+              
               <div className="contact_email_div">
                 <button className="contact-email">
                   <a href="https://mail.google.com/mail/u/0/?fs=1&to=saymaobaida2@gmail.com&tf=cm">
