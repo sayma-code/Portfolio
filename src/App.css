@@ -38,6 +38,7 @@ body,
   --color-orange: #f0b1a0;
 }
 .head_image{
+  text-align: center;
   width: 100%;
   margin-top: -2px;
   background: var(--color-light);
