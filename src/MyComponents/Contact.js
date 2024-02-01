@@ -8,7 +8,7 @@ import Col from "react-bootstrap/Col";
 
 export default function Contact() {
   return (
-    <div>
+    <div id="sayhello">
       <Container fluid className="footer">
         <Row>
           <Col xs={12} md={6} lg={6} xl={6} xxl={6}>
@@ -25,7 +25,7 @@ export default function Contact() {
               <div className="say_hello_div">
                 <h1 className="say_hello">Say Hello</h1>
               </div>
-              
+
               <div className="contact_email_div">
                 <button className="contact-email">
                   <a href="https://mail.google.com/mail/u/0/?fs=1&to=saymaobaida2@gmail.com&tf=cm">
@@ -36,13 +36,19 @@ export default function Contact() {
 
               <div className="contact_icon">
                 <label className="icon">
-                  <AiFillGithub size={50} />
+                  <a href="https://github.com/sayma-code">
+                    <AiFillGithub size={50} />
+                  </a>
                 </label>
                 <label className="icon">
-                  <AiFillLinkedin size={50} />
+                  <a href="https://www.linkedin.com/in/sayma-obaida-288590204/">
+                    <AiFillLinkedin size={50} />
+                  </a>
                 </label>
                 <label className="icon">
-                  <MdEmail size={50} />
+                  <a href="https://mail.google.com/mail/u/0/?fs=1&to=saymaobaida2@gmail.com&tf=cm">
+                    <MdEmail size={50} />
+                  </a>
                 </label>
               </div>
             </div>

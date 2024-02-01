@@ -13,7 +13,7 @@ export default function Header() {
   return (
     <div>
       <div className="header">
-        <nav>
+        {/* <nav>
           <div className="right">
             <div onClick={handleClick}>
               <FontAwesomeIcon icon={faBars} size="3x" />
@@ -29,7 +29,7 @@ export default function Header() {
               </h1>
             </div>
           )}
-        </nav>
+        </nav> */}
         <section className="home-image">
           <img
             src="images/head.png"

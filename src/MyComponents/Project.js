@@ -9,7 +9,7 @@ import Project4 from "./ProjectComponents.js/Project4";
 
 export default function Project() {
   return (
-    <Container fluid>
+    <Container fluid id="work">
       <div className="project_name">
         <div id="text_shadows">Projects</div>
       </div>
