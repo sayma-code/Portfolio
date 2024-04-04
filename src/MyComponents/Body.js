@@ -2,17 +2,27 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import logo from '../images/about.png';
+import header_connector from "../images/header_connector.png";
+import Image from "react-bootstrap/Image";
 
 export default function Body() {
   return (
     <div className="about">
+      <Image
+      className="head_image"
+        src={header_connector}
+        fluid
+        alt="Header Connector"
+        
+      />
       <Container fluid>
         <Row>
           <Col xs={12} md={6} lg={6} xl={6} xxl={6}>
             <img
               className="body-image"
               id="image-section2"
-              src="images/about.png"
+              src={logo}
               alt="drink a coffee"
             />
           </Col>

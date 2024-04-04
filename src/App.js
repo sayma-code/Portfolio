@@ -8,11 +8,11 @@ import Project from './MyComponents/Project';
 import Footer from './MyComponents/Footer';
 import BodyConnector from './MyComponents/Connector/BodyConnector';
 import FooterConnector from './MyComponents/Connector/FooterConnector';
-
+import Container from "react-bootstrap/Container";
 
 function App() {
   return (
-  <>
+  <Container fluid>
   <Header/>
   <Body/>
   <BodyConnector/>
@@ -20,7 +20,7 @@ function App() {
   <FooterConnector/>
   <Contact/>
   <Footer/>
-  </>
+  </Container>
   );
 }
 

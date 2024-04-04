@@ -1,15 +1,9 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
+import coverImage from "../images/head.png";
+import header_connector from "../images/header_connector.png";
+import Image from "react-bootstrap/Image";
 
 export default function Header() {
-  const [isShown, setIsShown] = useState(false);
-
-  const handleClick = (event) => {
-    setIsShown((current) => !current);
-  };
-
   return (
     <div>
       <div className="header">
@@ -30,21 +24,11 @@ export default function Header() {
             </div>
           )}
         </nav> */}
-        <section className="home-image">
-          <img
-            src="images/head.png"
-            className="home-image"
-            alt="header"
-            id="image-section"
-          />
+        <section >
+          <Image src={coverImage} fluid alt="header" className="home-image"/>
         </section>
-        {/* About Section */}
+        {/* About Section  */}
       </div>
-      <img
-        className="head_image"
-        src="images/header_connector.png"
-        alt="drink a coffee"
-      />
     </div>
   );
 }

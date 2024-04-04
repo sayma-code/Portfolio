@@ -4,6 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
+import work1 from '../../images/work-1.png';
 
 function MydModalWithGrid1(props) {
   return (
@@ -19,8 +20,8 @@ function MydModalWithGrid1(props) {
             <Col xs={12} sm={12} md={8} lg={8} xl={8} xxl={8}>
               <img
                 className="project_image"
-                src="images/discord_bot.png"
-                alt="Project 4"
+                src="{require('images/discord_bot.png')}"
+                alt="A computer and mobile"
               />
             </Col>
             <Col xs={12} sm={12}  md={4} lg={4} xl={4} xxl={4}>
@@ -47,8 +48,8 @@ export default function Project4() {
         variant="primary"
         onClick={() => setModalShow1(true)}
         className="project_image"
-        src="images/work-1.png"
-        alt="drink a coffee"
+        src={work1}
+        alt="A computer and mobile"
       />
       <MydModalWithGrid1
         show={modalShow1}

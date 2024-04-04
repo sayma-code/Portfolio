@@ -5,17 +5,18 @@ import { MdEmail } from "react-icons/md";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import bottom from '../images/portfolio-bottom.png'
 
 export default function Contact() {
   return (
     <div id="sayhello">
-      <Container fluid className="footer">
+      <div fluid className="footer">
         <Row>
           <Col xs={12} md={6} lg={6} xl={6} xxl={6}>
             <div>
               <img
                 id="footer_image"
-                src="images/portfolio-bottom.png"
+                src={bottom}
                 alt="drink a coffee"
               />
             </div>
@@ -54,7 +55,7 @@ export default function Contact() {
             </div>
           </Col>
         </Row>
-      </Container>
+      </div>
     </div>
   );
 }

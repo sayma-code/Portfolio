@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -9,7 +9,7 @@ import Project4 from "./ProjectComponents.js/Project4";
 
 export default function Project() {
   return (
-    <Container fluid id="work">
+    <div fluid id="work">
       <div className="project_name">
         <div id="text_shadows">Projects</div>
       </div>
@@ -27,6 +27,6 @@ export default function Project() {
           <Project4 />
         </Col>
       </Row>
-    </Container>
+    </div>
   );
 }

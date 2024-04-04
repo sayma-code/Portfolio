@@ -4,6 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
+import work1 from '../../images/work-1.png';
 
 function MydModalWithGrid1(props) {
   return (
@@ -50,7 +51,7 @@ export default function Project2() {
         variant="primary"
         onClick={() => setModalShow1(true)}
         className="project_image"
-        src="images/work-1.png"
+        src={work1}
         alt="drink a coffee"
       />
 
