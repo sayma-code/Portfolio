@@ -6,10 +6,18 @@ import Project1 from "./ProjectComponents.js/Project1";
 import Project2 from "./ProjectComponents.js/Project2";
 import Project3 from "./ProjectComponents.js/Project3";
 import Project4 from "./ProjectComponents.js/Project4";
+import body_connector from '../images/body_connector.png'
+import Image from "react-bootstrap/Image";
 
 export default function Project() {
   return (
     <div fluid id="work">
+      <Image
+        className="image2"
+        src={body_connector}
+        fluid
+        alt="body connector" 
+      />
       <div className="project_name">
         <div id="text_shadows">Projects</div>
       </div>

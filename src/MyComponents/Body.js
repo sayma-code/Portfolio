@@ -1,24 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import logo from '../images/about.png';
-import header_connector from "../images/header_connector.png";
+import logo from "../images/about.png";
 import Image from "react-bootstrap/Image";
-
+import header_connector from "../images/header_connector.png";
+import about_image_1 from "../images/aboutimage1.png";
+import digital_art from "../images/digital_art.png";
+import painting from "../images/painting.png";
 export default function Body() {
+  const [isHovered1, setIsHovered1] = useState(false);
+  const [isHovered2, setIsHovered2] = useState(false);
+  const [isHovered3, setIsHovered3] = useState(false);
   return (
     <div className="about">
       <Image
-      className="head_image"
+        className="head_image"
         src={header_connector}
         fluid
         alt="Header Connector"
-        
       />
       <Container fluid>
         <Row>
-          <Col xs={12} md={6} lg={6} xl={6} xxl={6}>
+          <Col xs={12} md={12} lg={6} xl={6} xxl={6}>
             <img
               className="body-image"
               id="image-section2"
@@ -26,26 +30,85 @@ export default function Body() {
               alt="drink a coffee"
             />
           </Col>
-          <Col xs={12} md={6} lg={6} xl={6} xxl={6}>
+          <Col xs={12} md={12} lg={6} xl={6} xxl={6}>
             <div className="body_content">
               <div className="body_header">
                 <h1 className="mint">Hello, I am Sayma Obaida</h1>
               </div>
+
               <div className="body_text">
                 <p className="adrella_text">
-                  It's awesome to meet you! <span role="img" aria-label="star">&#127775;</span>. My adventure into technology
-                  began when I successfully completed my degree in<span> 2020</span>. I began
-                  as a <span>full-stack developer</span> full-stack developer and have subsequently shifted my
-                  focus to <span>completion-based projects</span><span role="img" aria-label="computer_image">&#128187;</span>. My expertise spans both
-                  the front and back ends, allowing me to create seamless
-                  digital experiences. Beyond the intricacies of code, I have a fundamental understanding of <span>digital design. </span>. However, my
-                  passion doesn't stop there—outside the digital world, I find
-                  joy in the art of painting<span role="img" aria-label="paintings">&#127750;</span>. My paintings echo my enthusiasm
-                  for freedom in creativity and self-expression. That's a lot of
-                  embarrassing talks.  <span>Thanks for dropping by</span> my website! I'm
-                  excited to share more of my story with you.
+                  It's awesome to meet you!{" "}
+                  <span role="img" aria-label="star">
+                    &#127775;
+                  </span>
+                  . I’m a full stack software engineer specializing in building
+                  exceptional digital products. Currently, I’m focused on
+                  building accessible, human-centered products as a freelancer.
+                  <span>Thanks for dropping by</span> my website! I'm excited to
+                  share more of my story with you.
                 </p>
               </div>
+              {/* <Row>
+                <Col xs={12} md={4} lg={4} xl={4} xxl={4}>
+                  <div
+                    onMouseEnter={() => setIsHovered1(true)}
+                    onMouseLeave={() => setIsHovered1(false)}
+                  >
+                    <div className="image-for-row">
+                      <Image
+                        className="bounce animated size"
+                        src={about_image_1}
+                        alt="Header Connector"
+                      />
+                    </div>
+                    <div>
+                    {isHovered1 && <p>Show this text on hover</p>}
+                    </div>
+                  </div>
+                </Col>
+                <Col xs={12} md={4} lg={4} xl={4} xxl={4}>
+                  <div
+                    onMouseEnter={() => setIsHovered2(true)}
+                    onMouseLeave={() => setIsHovered2(false)}
+                  >
+                    <div className="image-for-row">
+                      <Image
+                        className="bounce animated size"
+                        src={digital_art}
+                        alt="Header Connector"
+                      />
+                    </div>
+                    <div>
+                      {isHovered2 && (
+                        <p>
+                          Beyond the intricacies of code, I have a fundamental
+                          understanding of digital design.
+                        </p>
+                      )}
+                    </div>
+                  </div>
+                </Col>
+                <Col xs={12} md={4} lg={4} xl={4} xxl={4}>
+                  <div
+                    onMouseEnter={() => setIsHovered3(true)}
+                    onMouseLeave={() => setIsHovered3(false)}
+                  >
+                    <div className="image-for-row">
+                    <Image
+                      className="bounce animated size"
+                      src={painting}
+                      alt="Header Connector"
+                    />
+                    </div>
+                    <div>
+                    {isHovered3 && (
+                      <p>outside the digital world, I find joy in the art.</p>
+                    )}
+                    </div>
+                  </div>
+                </Col>
+              </Row> */}
             </div>
           </Col>
         </Row>

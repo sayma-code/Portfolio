@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import "designs.css";
-
+@import "css/bounce.css";
 html,
 body,
 #root {
@@ -41,56 +41,6 @@ body,
   width: 100%;
   background: var(--color-light);
 }
-.image2{
-  width: 100%;
-  z-index: -1;
-}
-.image3{
-  width: 100%;
-}
-.header {
-  background: var(--color-pink);
-}
-/* .header .right {
-  z-index: 100;
-  float: right;
-  border-radius: 50%;
-  background-color: var(--color-bright-lavender);
-  margin: 10px;
-  padding: 15px;
-  color: var(--color-light);
-  position: relative;
-}
-
-.header .first {
-  z-index: 5;
-  font-family: Montserrat, sans-serif;
-  float: right;
-  background: var(--color-bright-lavender);
-  right: 0;
-  padding: 5rem;
-  border-radius: 25px;
-  position: absolute;
-}
-.header .first h1 {
-  background: var(--color-bright-lavender);
-  font-size: 30px;
-  text-transform: uppercase;
-  padding: 1rem;
-}
-.header .first h1 a {
-  background: var(--color-bright-lavender);
-  text-decoration: none;
-  color: var(--color-light);
-} */
-
-.home-image {
-  width: 100%;
-}
-
-#image-section {
-  max-width: 100%;
-}
 
 /* About*/
 
@@ -104,6 +54,7 @@ body,
 
 .body_content {
   margin-top: 20%;
+  padding: 20px 80px;
 }
 .body_header{
   font-family: 'Libre Baskerville';
@@ -111,7 +62,11 @@ body,
   font-weight: bolder;
 }
 .body_text{
-  padding: 20px 80px;
+  margin: 50px 0px 50px 0px;
+}
+.image-for-row{
+  display: flex;
+  justify-content: center;
 }
 /* Project */
 .project_name {
