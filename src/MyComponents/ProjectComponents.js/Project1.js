@@ -34,7 +34,7 @@ function MydModalWithGrid1(props) {
                 .
               </div>
               <a className="button_link" href="https://oms.ennovify.com/">
-                <Button className="project_button">Visit Site</Button>
+                <Button className="">Visit Site</Button>
               </a>
             </Col>
           </Row>

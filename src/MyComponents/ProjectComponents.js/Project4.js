@@ -30,7 +30,7 @@ function MydModalWithGrid1(props) {
               A Discord bot built with Python that tries to encourage and inspire you. Open to suggestions for additional features <span>&#129402;</span>. Have fun<span>&#9996;</span>
               </div>
               <a className="button_link" href="https://discord.com/api/oauth2/authorize?client_id=1164536790351360180&permissions=0&scope=bot">
-                <Button className="project_button">Visit Site</Button>
+                <Button className="">Visit Site</Button>
               </a>
             </Col>
           </Row>

@@ -1,17 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import logo from "../images/about.png";
 import Image from "react-bootstrap/Image";
 import header_connector from "../images/header_connector.png";
-import about_image_1 from "../images/aboutimage1.png";
-import digital_art from "../images/digital_art.png";
-import painting from "../images/painting.png";
+
 export default function Body() {
-  const [isHovered1, setIsHovered1] = useState(false);
-  const [isHovered2, setIsHovered2] = useState(false);
-  const [isHovered3, setIsHovered3] = useState(false);
   return (
     <div className="about">
       <Image
@@ -49,66 +44,6 @@ export default function Body() {
                   share more of my story with you.
                 </p>
               </div>
-              {/* <Row>
-                <Col xs={12} md={4} lg={4} xl={4} xxl={4}>
-                  <div
-                    onMouseEnter={() => setIsHovered1(true)}
-                    onMouseLeave={() => setIsHovered1(false)}
-                  >
-                    <div className="image-for-row">
-                      <Image
-                        className="bounce animated size"
-                        src={about_image_1}
-                        alt="Header Connector"
-                      />
-                    </div>
-                    <div>
-                    {isHovered1 && <p>Show this text on hover</p>}
-                    </div>
-                  </div>
-                </Col>
-                <Col xs={12} md={4} lg={4} xl={4} xxl={4}>
-                  <div
-                    onMouseEnter={() => setIsHovered2(true)}
-                    onMouseLeave={() => setIsHovered2(false)}
-                  >
-                    <div className="image-for-row">
-                      <Image
-                        className="bounce animated size"
-                        src={digital_art}
-                        alt="Header Connector"
-                      />
-                    </div>
-                    <div>
-                      {isHovered2 && (
-                        <p>
-                          Beyond the intricacies of code, I have a fundamental
-                          understanding of digital design.
-                        </p>
-                      )}
-                    </div>
-                  </div>
-                </Col>
-                <Col xs={12} md={4} lg={4} xl={4} xxl={4}>
-                  <div
-                    onMouseEnter={() => setIsHovered3(true)}
-                    onMouseLeave={() => setIsHovered3(false)}
-                  >
-                    <div className="image-for-row">
-                    <Image
-                      className="bounce animated size"
-                      src={painting}
-                      alt="Header Connector"
-                    />
-                    </div>
-                    <div>
-                    {isHovered3 && (
-                      <p>outside the digital world, I find joy in the art.</p>
-                    )}
-                    </div>
-                  </div>
-                </Col>
-              </Row> */}
             </div>
           </Col>
         </Row>

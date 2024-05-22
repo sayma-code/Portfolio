@@ -32,8 +32,8 @@ function MydModalWithGrid1(props) {
                 A consultancy firm needed software that would help them manage
                 and keep track of all the work.
               </div>
-              <a className="button_link" href="https://oms.ennovify.com/">
-                <Button className="project_button">Visit Site</Button>
+              <a className="button_link" href="https://consult.vegabondit.com/">
+                <Button className="">Visit Site</Button>
               </a>
             </Col>
           </Row>

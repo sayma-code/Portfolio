@@ -91,13 +91,13 @@ body,
 .modal-dialog{
   min-width: 60%;
 }
+.project_sample_body{
+  margin-bottom: 1rem;
+}
 .button_link{
   color: var(--color-lavender);
 }
-.project_button{
-  background-color: var(--color-lavender);
-  color: var(--color-lavender);
-}
+
 /* .modal-content{
   background-color: var(--color-yellow) !important;
 } */

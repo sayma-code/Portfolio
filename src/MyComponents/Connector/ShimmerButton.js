@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 export default function ShimmerButton() {
   return (
     <>
-      <Button className="project_button_1">
+      <Button className="">
         Visit Site
         <svg
           width="79"

@@ -21,18 +21,20 @@ function MydModalWithGrid1(props) {
               <img
                 className="project_image3"
                 src="images/spt.png"
-                alt="Project 3"
+                alt=" "
               />
             </Col>
             <Col xs={12} sm={12} md={4} lg={4} xl={4} xxl={4}>
+              <div className="project_sample_body">
               <div className="body_header">Car Renting Website</div>
               <div className="adrella_text">
                 Contributed to the development of a car rental website utilizing
                 Laravel.
               </div>
               <a className="button_link" href="https://spt.ebuzz-it.com/">
-                <Button className="project_button">Visit Site</Button>
+                <Button className="">Visit Site</Button>
               </a>
+              </div>
             </Col>
           </Row>
         </Container>
@@ -50,7 +52,7 @@ export default function Project3() {
         onClick={() => setModalShow1(true)}
         className="project_image"
         src={work1}
-        alt="drink a coffee"
+        alt=" "
       />
       <MydModalWithGrid1
         show={modalShow1}

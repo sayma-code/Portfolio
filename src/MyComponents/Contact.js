@@ -2,7 +2,6 @@ import React from "react";
 import { AiFillGithub } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
-import Container from "react-bootstrap/Container";
 import footer_connector from "../images/footer_connector.png"
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
