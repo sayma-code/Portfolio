@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.7fed7ca1.chunk.css",
-    "main.js": "/Portfolio/static/js/main.926fb885.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.926fb885.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.34d1718d.chunk.css",
+    "main.js": "/Portfolio/static/js/main.c8f95ff9.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.c8f95ff9.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.af2577f7.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.af2577f7.js.map",
     "static/css/2.98036eff.chunk.css": "/Portfolio/static/css/2.98036eff.chunk.css",
-    "static/js/2.9b24b6c0.chunk.js": "/Portfolio/static/js/2.9b24b6c0.chunk.js",
-    "static/js/2.9b24b6c0.chunk.js.map": "/Portfolio/static/js/2.9b24b6c0.chunk.js.map",
+    "static/js/2.3ce7893b.chunk.js": "/Portfolio/static/js/2.3ce7893b.chunk.js",
+    "static/js/2.3ce7893b.chunk.js.map": "/Portfolio/static/js/2.3ce7893b.chunk.js.map",
     "static/js/3.0b1741c7.chunk.js": "/Portfolio/static/js/3.0b1741c7.chunk.js",
     "static/js/3.0b1741c7.chunk.js.map": "/Portfolio/static/js/3.0b1741c7.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "precache-manifest.c7c650b4132909ccbe317c0479b310d3.js": "/Portfolio/precache-manifest.c7c650b4132909ccbe317c0479b310d3.js",
+    "precache-manifest.4ab99cf526648d90af7a85f30ecedb25.js": "/Portfolio/precache-manifest.4ab99cf526648d90af7a85f30ecedb25.js",
     "service-worker.js": "/Portfolio/service-worker.js",
     "static/css/2.98036eff.chunk.css.map": "/Portfolio/static/css/2.98036eff.chunk.css.map",
-    "static/css/main.7fed7ca1.chunk.css.map": "/Portfolio/static/css/main.7fed7ca1.chunk.css.map",
-    "static/js/2.9b24b6c0.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.9b24b6c0.chunk.js.LICENSE.txt",
+    "static/css/main.34d1718d.chunk.css.map": "/Portfolio/static/css/main.34d1718d.chunk.css.map",
+    "static/js/2.3ce7893b.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.3ce7893b.chunk.js.LICENSE.txt",
     "static/media/about.png": "/Portfolio/static/media/about.f599be69.png",
     "static/media/aboutimage1.png": "/Portfolio/static/media/aboutimage1.b90bab61.png",
     "static/media/digital_art.png": "/Portfolio/static/media/digital_art.bc11d69c.png",
@@ -26,8 +26,8 @@
   "entrypoints": [
     "static/js/runtime-main.af2577f7.js",
     "static/css/2.98036eff.chunk.css",
-    "static/js/2.9b24b6c0.chunk.js",
-    "static/css/main.7fed7ca1.chunk.css",
-    "static/js/main.926fb885.chunk.js"
+    "static/js/2.3ce7893b.chunk.js",
+    "static/css/main.34d1718d.chunk.css",
+    "static/js/main.c8f95ff9.chunk.js"
   ]
 }
