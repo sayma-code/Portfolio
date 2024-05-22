@@ -5,8 +5,6 @@ import Contact from "./MyComponents/Contact";
 import Body from "./MyComponents/Body";
 import Project from "./MyComponents/Project";
 import Footer from "./MyComponents/Footer";
-import BodyConnector from "./MyComponents/Connector/BodyConnector";
-import FooterConnector from "./MyComponents/Connector/FooterConnector";
 import Container from "react-bootstrap/Container";
 
 function App() {
@@ -14,7 +12,6 @@ function App() {
     <Container fluid>
       <Body />
       <Project />
-      <FooterConnector />
       <Contact />
       <Footer />
     </Container>

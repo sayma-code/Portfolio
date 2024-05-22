@@ -13,7 +13,7 @@ export default function Project() {
   return (
     <div fluid id="work">
       <Image
-        className="image2"
+        className="project_connector"
         src={body_connector}
         fluid
         alt="body connector" 

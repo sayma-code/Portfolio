@@ -3,13 +3,21 @@ import { AiFillGithub } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
 import Container from "react-bootstrap/Container";
+import footer_connector from "../images/footer_connector.png"
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import bottom from '../images/portfolio-bottom.png'
+import Image from "react-bootstrap/Image";
 
 export default function Contact() {
   return (
     <div id="sayhello">
+      <Image
+        className="footer_connector"
+        src={footer_connector}
+        fluid
+        alt="footer connector" 
+      />
       <div fluid className="footer">
         <Row>
           <Col xs={12} md={6} lg={6} xl={6} xxl={6}>
