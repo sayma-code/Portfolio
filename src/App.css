@@ -8,7 +8,6 @@
 html,
 body,
 #root {
-  height: 50%;
   margin: 0;
   padding: 0;
 }
@@ -119,6 +118,7 @@ body,
   background-color: var(--color-orange);
 }
 .footer_text{
+  text-align: center;
   margin-top: 30%;
   margin-left: 15%;
   transform: skew(0, -10deg);
@@ -153,4 +153,17 @@ body,
 }
 .foot .foot_align{
   text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .body_content {
+    margin-top: 20%;
+    padding: 20px 20px;
+  }
+
+  .footer_text{
+    text-align: center;
+    margin-top: 30%;
+    transform: skew(0, -10deg);
+  }
 }

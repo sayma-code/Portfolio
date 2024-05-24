@@ -257,3 +257,13 @@ TEXT JUMPING */
 .body_text span{
   font-weight: bold;
 }
+
+@media only screen and (max-width: 600px) {
+  .adrella_text {
+    color: #7a7c7f;
+    font-size: 15px;
+    font-family: "Libre Baskerville", serif;
+    line-height: 35px;
+    text-shadow: 0 1px 1px #fff;
+  }
+}
