@@ -10,6 +10,7 @@ body,
 #root {
   margin: 0;
   padding: 0;
+  border: 6px solid #99CCFF;
 }
 .link{
   text-decoration: none;
@@ -55,13 +56,50 @@ body,
   margin-top: 20%;
   padding: 20px 80px;
 }
-.body_header{
+.body_content .body_header{
   font-family: 'Libre Baskerville';
   font-size: 30px;
   font-weight: bolder;
 }
+.body_list{
+  text-align: center;
+  margin-top: 1em;
+  position: relative;
+}
+.body_list_div{
+  position: absolute;
+  top: 0;
+}
+.body_list_ul {
+  list-style: none; /* Remove default bullets */
+  padding: 0;
+  margin: 0;
+}
+
+.body_list_li {
+  display: inline; /* Make list items inline */
+  margin-right: 1em; /* Add spacing between list items */
+}
+
+.body_list_text {
+  display: inline; /* Make the paragraph inline */
+  margin: 0; /* Remove default paragraph margins */
+}
+.body_list_li::before {
+  content: "\2022"; /* Unicode for bullet point */
+  font-family: "Rocher"; /* Apply your font */
+  font-palette: --HELLO; /* Apply your custom font palette */
+  color: var(--HELLO); /* Custom color */
+  font-size: 1em; /* Adjust the size */
+  margin-right: 0.5em;
+  display: inline-block;
+}
+
 .body_text{
-  margin: 50px 0px 50px 0px;
+  margin: 20px 0px 50px 0px;
+}
+.resume{
+  text-align: center;
 }
 .image-for-row{
   display: flex;
@@ -163,7 +201,6 @@ body,
 
   .footer_text{
     text-align: center;
-    margin-top: 30%;
     transform: skew(0, -10deg);
   }
 }

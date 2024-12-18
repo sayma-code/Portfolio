@@ -53,7 +53,6 @@ export default function Project1() {
         onClick={() => setModalShow1(true)}
         className="project_image"
         src={work1}
-        alt="Computer or mobile"
       />
       <MydModalWithGrid1
         show={modalShow1}
