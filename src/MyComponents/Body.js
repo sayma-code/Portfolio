@@ -39,7 +39,9 @@ export default function Body() {
               </div>
               <div className="body_list_overlay">
                 <div className="body_list">
-                  <div className="body_list_image"><img
+                  <div className="wrap">
+                  <div className="body_list_image">
+                    <img
                     src={stroke}
                     alt="drink a coffee"
                   />
@@ -54,7 +56,7 @@ export default function Body() {
                       </ul>
                     </div>
                   </div>
-
+                  </div>
                 </div></div>
 
               <div className="body_text">

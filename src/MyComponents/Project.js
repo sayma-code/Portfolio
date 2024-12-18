@@ -7,7 +7,7 @@ import Project3 from "./ProjectComponents.js/Project3";
 import Project4 from "./ProjectComponents.js/Project4";
 import body_connector from '../images/body_connector.png'
 import Image from "react-bootstrap/Image";
-
+import ballon from '../images/ballon.png'
 export default function Project() {
   return (
     <div fluid id="work">
@@ -15,10 +15,23 @@ export default function Project() {
         className="project_connector"
         src={body_connector}
         fluid
-        alt="body connector" 
+        alt="body connector"
       />
-      <div className="project_name">
-        <div id="text_shadows">Projects</div>
+      <div className="ballon_container">
+        {/* Balloon Image */}
+        <div className="ballon_image_div">
+          <Image
+            className="ballon_image"
+            src={ballon} /* Replace with your balloon image */
+            fluid
+            alt="body connector"
+          />
+        </div>
+
+        {/* Projects Header */}
+        <div className="project_name">
+          <div id="text_shadows">Projects</div>
+        </div>
       </div>
       <Row>
         <Col xs={12} sm={12} md={6} lg={4} xxl={3} xl={3}>

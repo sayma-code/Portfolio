@@ -56,47 +56,58 @@
   animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
   letter-spacing: 0.4rem;
 }
+
 @keyframes shadows {
   0% {
     text-shadow: none;
   }
+
   10% {
     text-shadow: 3px 3px 0 var(--color-secondary);
   }
+
   20% {
     text-shadow: 3px 3px 0 var(--color-secondary),
       6px 6px 0 var(--color-tertiary);
   }
+
   30% {
     text-shadow: 3px 3px 0 var(--color-secondary),
       6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
   }
+
   40% {
     text-shadow: 3px 3px 0 var(--color-secondary),
       6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
       12px 12px 0 var(--color-quinary);
   }
+
   50% {
     text-shadow: 3px 3px 0 var(--color-secondary),
       6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
       12px 12px 0 var(--color-quinary);
   }
+
   60% {
     text-shadow: 3px 3px 0 var(--color-secondary),
       6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
       12px 12px 0 var(--color-quinary);
   }
+
   70% {
     text-shadow: 3px 3px 0 var(--color-secondary),
       6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
   }
+
   80% {
     text-shadow: 3px 3px 0 var(--color-secondary),
       6px 6px 0 var(--color-tertiary);
   }
+
   90% {
     text-shadow: 3px 3px 0 var(--color-secondary);
   }
+
   100% {
     text-shadow: none;
   }
@@ -106,15 +117,19 @@
   0% {
     transform: translate(0px, 0px);
   }
+
   40% {
     transform: translate(-12px, -12px);
   }
+
   50% {
     transform: translate(-12px, -12px);
   }
+
   60% {
     transform: translate(-12px, -12px);
   }
+
   100% {
     transform: translate(0px, 0px);
   }
@@ -156,13 +171,11 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(
-    45deg,
-    transparent 3%,
-    #99ccff 3%,
-    #99ccff 5%,
-    #d4e2d4 5%
-  );
+  background: linear-gradient(45deg,
+      transparent 3%,
+      #99ccff 3%,
+      #99ccff 5%,
+      #d4e2d4 5%);
   text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #99ccff;
   clip-path: var(--slice-0);
 }
@@ -171,6 +184,7 @@
   animation: 1s glitch;
   animation-timing-function: steps(2, end);
 }
+
 .resume_button,
 .resume_button:after {
   width: 200px;
@@ -185,6 +199,7 @@
   -webkit-user-select: none;
   touch-action: manipulation;
 }
+
 .resume_button:after {
   --slice-0: inset(50% 50% 50% 50%);
   --slice-1: inset(80% -6px 0 0);
@@ -200,13 +215,11 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(
-    45deg,
-    transparent 3%,
-    #99ccff 3%,
-    #99ccff 5%,
-    #d4e2d4 5%
-  );
+  background: linear-gradient(45deg,
+      transparent 3%,
+      #99ccff 3%,
+      #99ccff 5%,
+      #d4e2d4 5%);
   text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #99ccff;
   clip-path: var(--slice-0);
 }
@@ -221,42 +234,52 @@
     clip-path: var(--slice-1);
     transform: translate(-20px, -10px);
   }
+
   10% {
     clip-path: var(--slice-3);
     transform: translate(10px, 10px);
   }
+
   20% {
     clip-path: var(--slice-1);
     transform: translate(-10px, 10px);
   }
+
   30% {
     clip-path: var(--slice-3);
     transform: translate(0px, 5px);
   }
+
   40% {
     clip-path: var(--slice-2);
     transform: translate(-5px, 0px);
   }
+
   50% {
     clip-path: var(--slice-3);
     transform: translate(5px, 0px);
   }
+
   60% {
     clip-path: var(--slice-4);
     transform: translate(5px, 10px);
   }
+
   70% {
     clip-path: var(--slice-2);
     transform: translate(-10px, 10px);
   }
+
   80% {
     clip-path: var(--slice-5);
     transform: translate(20px, -10px);
   }
+
   90% {
     clip-path: var(--slice-1);
     transform: translate(-10px, 0px);
   }
+
   100% {
     clip-path: var(--slice-1);
     transform: translate(0);
@@ -271,6 +294,7 @@
   text-align: center;
   text-shadow: 0 1px 1px #fff;
 }
+
 .adrella_text {
   color: #7a7c7f;
   font-size: 20px;
@@ -278,6 +302,7 @@
   line-height: 45px;
   text-shadow: 0 1px 1px #fff;
 }
+
 .adrella_text.byline {
   font-style: italic;
   color: #b6b6b6;
@@ -286,6 +311,7 @@
   text-align: center;
   text-shadow: 0 1px 1px #fff;
 }
+
 .adrella_text_small {
   color: #7a7c7f;
   font-size: 15px;
@@ -317,6 +343,25 @@ TEXT JUMPING */
     font-family: "Libre Baskerville", serif;
     line-height: 35px;
     text-shadow: 0 1px 1px #fff;
+  }
+
+  .footer .contact-email,
+  .footer .contact-email:after {
+    width: 200px;
+    height: 90px;
+    line-height: 90px;
+    font-size: 20px;
+    font-family: "Bungee", sans-serif;
+    background: linear-gradient(45deg, transparent 5%, #99ccff 5%);
+    border: 0;
+    color: #fff;
+    letter-spacing: 3px;
+    box-shadow: 5px 0px 0px #c2a4f3;
+    outline: transparent;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
   }
 
 }
