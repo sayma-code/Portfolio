@@ -4,24 +4,24 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import logo from "../images/about.png";
 import Image from "react-bootstrap/Image";
-import header_connector from "../images/header_connector.png";
-import stargreen from "../images/stargreen.png";
-import starwhite from "../images/white.png";
+import arch from "../images/arch.png";
+import stargreen from "../images/starblue.png";
+import stardarkpink from "../images/stardarkpink.png";
 export default function Body() {
   return (
     <div className="about">
+      <div className="head">
       <Image
         className="head_image"
-        src={header_connector}
+        src={arch}
         fluid
-        alt="Header Connector"
-      />
-      <Container fluid>
+        alt="Arched head"
+      /></div>
+      <div className="body-all">
         <Row>
           <Col xs={12} md={12} lg={6} xl={6} xxl={6}>
             <img
               className="body-image"
-              id="image-section2"
               src={logo}
               alt="drink a coffee"
             />
@@ -35,8 +35,8 @@ export default function Body() {
                 alt="Header Connector"
               />
               <Image
-                className="star-white"
-                src={starwhite}
+                className="stardarkpink"
+                src={stardarkpink}
                 fluid
                 alt="Header Connector"
               />
@@ -60,17 +60,10 @@ export default function Body() {
                   share more of my story with you.
                 </p>
               </div>
-              {/*<div className="resume">
-                <button className="resume_button">
-                  <a  className="s" href="https://drive.google.com/file/d/1vSpAav60OzCunttBdBB3geGipJfPhNVP/view?usp=sharing">
-                    Resume
-                  </a>
-                </button>
-              </div> */}
             </div>
           </Col>
         </Row>
-      </Container>
+      </div>
     </div>
   );
 }
