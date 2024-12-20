@@ -62,6 +62,25 @@ body,
   margin-top: 20%;
   padding: 20px 80px;
 }
+.star{
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-name: twinkle;
+  width: 50px;
+}
+.star-white{
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-name: twinkle;
+  margin-top: 1em;
+  width: 30px;
+}
+@keyframes twinkle {
+  50%{
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+}
 
 .body_content .body_header {
   font-family: 'Libre Baskerville';
@@ -84,40 +103,28 @@ body,
 
 .body_list_ul {
   list-style: none;
-  /* Remove default bullets */
   padding: 0;
   margin: 0;
 }
 
 .body_list_li {
   display: inline;
-  /* Make list items inline */
   margin-right: 1em;
-  /* Add spacing between list items */
-}
-
-.body_list_text {
-  display: inline;
-  /* Make the paragraph inline */
-  margin: 0;
-  /* Remove default paragraph margins */
 }
 
 .body_list_li::before {
   content: "\2022";
-  /* Unicode for bullet point */
   font-family: "Rocher";
-  /* Apply your font */
   font-palette: --HELLO;
-  /* Apply your custom font palette */
   color: var(--HELLO);
-  /* Custom color */
   font-size: 1em;
-  /* Adjust the size */
   margin-right: 0.5em;
   display: inline-block;
 }
-
+.body_list_text {
+  display: inline;
+  margin: 0;
+}
 .body_text {
   margin: 20px 0px 50px 0px;
 }
@@ -137,24 +144,18 @@ body,
 
 .ballon_container {
   position: relative;
-  /* Establishes a positioning context */
   width: 100%;
   height: auto;
-  /* Adjust based on your content */
   text-align: center;
-  /* Center content horizontally */
 }
 
 /* Balloon image */
 .ballon_image_div {
   position: absolute;
-  /* Allow image to overlap */
   top: -170%;
-  /* Adjust based on your image */
   left: 30%;
   transform: translateX(-50%);
   z-index: 1;
-  /* Set behind the text */
 }
 
 .ballon_image {
@@ -198,9 +199,6 @@ body,
   color: var(--color-lavender);
 }
 
-/* .modal-content{
-  background-color: var(--color-yellow) !important;
-} */
 /* CONTACT ME*/
 .footer_connector {
   width: 100%;
@@ -261,6 +259,7 @@ body,
 
 .foot .foot_align {
   text-align: center;
+  color: white;
 }
 
 @media only screen and (max-width: 600px) {
@@ -272,7 +271,10 @@ body,
     width: 300px;
     height: 200px;
   }
-
+  .body_list_ul {
+    flex-direction: column; /* Stack items vertically */
+    gap: 1em;
+  }
   .wrap {
     display: flex;
     justify-content: center;

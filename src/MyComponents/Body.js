@@ -5,8 +5,8 @@ import Col from "react-bootstrap/Col";
 import logo from "../images/about.png";
 import Image from "react-bootstrap/Image";
 import header_connector from "../images/header_connector.png";
-import stroke from "../images/brush1.png";
-
+import stargreen from "../images/stargreen.png";
+import starwhite from "../images/white.png";
 export default function Body() {
   return (
     <div className="about">
@@ -28,6 +28,18 @@ export default function Body() {
           </Col>
           <Col xs={12} md={12} lg={6} xl={6} xxl={6}>
             <div className="body_content">
+              <Image
+                className="star"
+                src={stargreen}
+                fluid
+                alt="Header Connector"
+              />
+              <Image
+                className="star-white"
+                src={starwhite}
+                fluid
+                alt="Header Connector"
+              />
               <div className="body_header">
                 <h1 className="mint">Hello, I am Sayma Obaida</h1>
               </div>
@@ -37,27 +49,7 @@ export default function Body() {
                   <li className="body_list_li"><p className="body_list_text & adrella_text_small">Freelancer</p></li>
                 </ul>
               </div>
-              <div className="body_list_overlay">
-                <div className="body_list">
-                  <div className="wrap">
-                  <div className="body_list_image">
-                    <img
-                    src={stroke}
-                    alt="drink a coffee"
-                  />
-                    <div className="body_list_div">
-                      <ul className="body_list_ul">
-                        <li className="body_list_li"><p className="body_list_text  & adrella_text_small"> C</p></li>
-                        <li className="body_list_li"><p className="body_list_text & adrella_text_small">C++</p></li>
-                        <li className="body_list_li"><p className="body_list_text & adrella_text_small">Python</p></li>
-                        <li className="body_list_li"><p className="body_list_text  & adrella_text_small"> Laravel</p></li>
-                        <li className="body_list_li"><p className="body_list_text & adrella_text_small">React</p></li>
-                        <li className="body_list_li"><p className="body_list_text & adrella_text_small">MySQL</p></li>
-                      </ul>
-                    </div>
-                  </div>
-                  </div>
-                </div></div>
+              
 
               <div className="body_text">
                 <p className="adrella_text">
