@@ -31,7 +31,7 @@
 /* Text EFFECT PEACOCK USED IN PROJECT NAME */
 
 .peackok_heading {
-  color: var(--color-green);
+  color: #95b5df;
   font-family: "Rouge Script", cursive;
   font-size: 30px;
   font-weight: normal;
@@ -300,7 +300,16 @@ TEXT JUMPING */
     line-height: 35px;
     text-shadow: 0 1px 1px #fff;
   }
-
+  .peackok_heading {
+    color: var(--color-green);
+    font-family: "Rouge Script", cursive;
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 30px;
+    margin: 0 0 40px;
+    text-align: center;
+    text-shadow: 1px 1px 2px #082b34;
+  }
   .footer .contact-email,
   .footer .contact-email:after {
     width: 200px;
@@ -407,5 +416,5 @@ TEXT JUMPING */
     }
   }
 
-  
+
 }

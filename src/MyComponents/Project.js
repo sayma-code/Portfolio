@@ -11,7 +11,7 @@ import ballon from '../images/ballon.png'
 import stroke from "../images/brush1.png";
 export default function Project() {
   return (
-    <div fluid id="work">
+    <div fluid>
       <Image
         className="project_connector"
         src={body_connector}
