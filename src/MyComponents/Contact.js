@@ -7,28 +7,28 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import bottom from '../images/portfolio-bottom.png'
 import Image from "react-bootstrap/Image";
-
+import plant from "../images/plant.png";
 export default function Contact() {
   return (
-    <div id="sayhello">
+    <>
       <Image
         className="footer_connector"
         src={footer_connector}
         fluid
-        alt="footer connector" 
+        alt="footer connector"
       />
       <div fluid className="footer">
         <Row>
           <Col xs={12} md={6} lg={6} xl={6} xxl={6}>
-            <div>
+            <div className="footer_image">
               <img
-                id="footer_image"
                 src={bottom}
                 alt="drink a coffee"
               />
             </div>
           </Col>
           <Col xs={12} md={6} lg={6} xl={6} xxl={6}>
+
             <div className="footer_text">
               <div className="say_hello_div">
                 <h1 className="say_hello">Say Hello</h1>
@@ -59,10 +59,21 @@ export default function Contact() {
                   </a>
                 </label>
               </div>
+              <div>
+                <button className="resume_button">Download Resume</button>
+              </div>
             </div>
+
           </Col>
         </Row>
+        <div className="plant">
+          <Image
+            src={plant}
+            fluid
+            alt="Plant"
+          />
+        </div>
       </div>
-    </div>
+    </>
   );
 }

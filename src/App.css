@@ -232,58 +232,130 @@ body,
 }
 
 /* CONTACT ME*/
+
+
+
+.resume_button {
+  width: 13em;
+  height: 2.5em;
+  background: #c2a4f3;
+  color: white;
+  border: none;
+  border-radius: 0.625em;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+ }
+ 
+ .resume_button:hover {
+  color: #c2a4f3;
+ }
+ 
+ .resume_button:after {
+  content: "";
+  background: white;
+  position: absolute;
+  z-index: -1;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 0.5s;
+ }
+ 
+ .resume_button:hover:after {
+  transform: skewX(-45deg) scale(1, 1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+ }
 .footer_connector {
   width: 100%;
 }
-
 .footer {
-  background-color: var(--color-pink);
-  padding: 1rem;
+  background-color: var(--color-orange);
+  position: relative; /* This ensures child elements can use absolute positioning */
+  overflow: hidden; /* Ensures the plant doesn't spill out of the footer */
 }
 
-#footer_image {
+.footer_image{
+  text-align: center;
+}
+.footer_image img{
   max-width: 100%;
   max-height: 100%;
 }
-
-.footer {
-  background-color: var(--color-orange);
-}
-
-.footer_text {
+.footer_text{
   text-align: center;
-  margin-top: 30%;
-  margin-left: 15%;
-  transform: skew(0, -10deg);
-}
-
-.footer .footer_text .say_hello_div {
-  margin: 10px;
+  margin-top: 20%;
 }
 
 .footer .footer_text .contact_email_div {
-  padding: 5px;
-
+  margin-top: 5%;
 }
-
 
 .footer .contact-email a {
   text-decoration: none;
   color: var(--color-light);
 }
-
 .footer .footer_text .contact_icon {
   margin: 10px;
 }
-
 .footer .footer_text .contact_icon .icon {
-  color: var(--color-light);
   padding: 5px;
 }
-
 .footer .footer_text .contact_icon .icon a {
   color: var(--color-light);
 }
+.plant {
+  position: absolute; /* Positions the plant over the Row */
+  bottom: 0; /* Aligns the bottom of the plant with the footer */
+  left: 90%; /* Centers the plant horizontally */
+  transform: translateX(-50%) translateY(-200%) rotate(0deg); /* Start position (off-screen) */
+  z-index: 2; /* Ensures the plant is above the Row */
+  max-width: 100%; /* Ensures the plant image is responsive */
+  animation: dropAndSwing 2.5s ease-out forwards, gentleSwing 2s ease-in-out 2.5s infinite;
+}
+@keyframes dropAndSwing {
+  0% {
+    transform: translateX(-50%) translateY(-200%) rotate(0deg); /* Start off-screen */
+  }
+  40% {
+    transform: translateX(-50%) translateY(20%) rotate(-5deg); /* Drop and tilt left */
+  }
+  60% {
+    transform: translateX(-50%) translateY(20%) rotate(5deg); /* Tilt right */
+  }
+  80% {
+    transform: translateX(-50%) translateY(10%) rotate(-3deg); /* Settle slightly */
+  }
+  100% {
+    transform: translateX(-50%) translateY(0%) rotate(0deg); /* Fully stable */
+  }
+}
+@keyframes gentleSwing {
+  0% {
+    transform: translateX(-50%) translateY(0%) rotate(0deg);
+  }
+  50% {
+    transform: translateX(-50%) translateY(0%) rotate(2deg);
+  }
+  100% {
+    transform: translateX(-50%) translateY(0%) rotate(-2deg);
+  }
+}
+
+.plant {
+  animation: dropAndSwing 2.5s ease-out forwards, gentleSwing 2s ease-in-out 2.5s infinite; /* Faster gentle swing */
+}
+/* 
+.footer_text {
+  transform: skew(0, -10deg);
+}
+*/
 
 .foot {
   background-color: var(--color-orange);
@@ -293,6 +365,8 @@ body,
   text-align: center;
   color: white;
 }
+
+
 @media only screen and (max-width: 768px) {
   .body-all {
     margin-top: -30px;
@@ -356,12 +430,16 @@ body,
     /* Adjust balloon size */
     height: auto;
   }
-
+  .resume_button{
+    margin-bottom: 10%;
+  }
+  .footer_image{
+    margin: 5%;
+  }
   .footer_text {
     text-align: center;
-    margin-top: 30%;
+    margin-top: 10%;
     margin-left: 0;
-    transform: skew(0, -10deg);
   }
   .footer .footer_text .contact_email_div {
     padding: 0;
