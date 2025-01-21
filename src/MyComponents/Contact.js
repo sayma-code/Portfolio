@@ -42,6 +42,11 @@ export default function Contact() {
                 </button>
               </div>
 
+              <div>
+                <button className="resume_button">Download Resume</button>
+              </div>
+
+
               <div className="contact_icon">
                 <label className="icon">
                   <a href="https://github.com/sayma-code">
@@ -58,9 +63,6 @@ export default function Contact() {
                     <MdEmail size={50} />
                   </a>
                 </label>
-              </div>
-              <div>
-                <button className="resume_button">Download Resume</button>
               </div>
             </div>
 

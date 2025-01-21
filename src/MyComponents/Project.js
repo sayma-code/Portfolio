@@ -8,7 +8,6 @@ import Project4 from "./ProjectComponents.js/Project4";
 import body_connector from '../images/body_connector_1.png'
 import Image from "react-bootstrap/Image";
 import ballon from '../images/ballon.png'
-import stroke from "../images/brush1.png";
 export default function Project() {
   return (
     <div fluid>
@@ -33,40 +32,18 @@ export default function Project() {
         <div className="project_name">
           <div id="text_shadows">Projects</div>
         </div>
-
-
-        <div className="language_list">
-          <div className="wrap">
-            <div className="language_list_image">
-              <img
-                src={stroke}
-                alt="drink a coffee"
-              />
-              <div className="body_list_div">
-                <ul className="body_list_ul">
-                  <li className="body_list_li"><p className="body_list_text  & adrella_text_small"> C</p></li>
-                  <li className="body_list_li"><p className="body_list_text & adrella_text_small">C++</p></li>
-                  <li className="body_list_li"><p className="body_list_text & adrella_text_small">Python</p></li>
-                  <li className="body_list_li"><p className="body_list_text  & adrella_text_small"> Laravel</p></li>
-                  <li className="body_list_li"><p className="body_list_text & adrella_text_small">React</p></li>
-                  <li className="body_list_li"><p className="body_list_text & adrella_text_small">MySQL</p></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
-      <Row>
-        <Col xs={12} sm={12} md={6} lg={4} xxl={3} xl={3}>
+      <Row className="mx-3 g-4">
+        <Col xs={12} sm={12} md={6} lg={4} xxl={3} xl={3} className="project-col">
           <Project1 />
         </Col>
-        <Col xs={12} sm={12} md={6} lg={4} xxl={3} xl={3}>
+        <Col xs={12} sm={12} md={6} lg={4} xxl={3} xl={3} className="project-col">
           <Project2 />
         </Col>
-        <Col xs={12} sm={12} md={6} lg={4} xxl={3} xl={3}>
+        <Col xs={12} sm={12} md={6} lg={4} xxl={3} xl={3} className="project-col">
           <Project3 />
         </Col>
-        <Col xs={12} sm={12} md={6} lg={4} xxl={3} xl={3}>
+        <Col xs={12} sm={12} md={6} lg={4} xxl={3} xl={3} className="project-col">
           <Project4 />
         </Col>
       </Row>

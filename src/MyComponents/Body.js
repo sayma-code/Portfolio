@@ -1,22 +1,22 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import logo from "../images/about.png";
 import Image from "react-bootstrap/Image";
-import arch from "../images/arch.png";
-import stargreen from "../images/starblue.png";
+import starblue from "../images/starblue.png";
+
 import stardarkpink from "../images/stardarkpink.png";
 export default function Body() {
   return (
     <div className="about">
-      <div className="head">
+
+      {/* <div className="head">
       <Image
         className="head_image"
         src={arch}
         fluid
         alt="Arched head"
-      /></div>
+      /></div> */}
       <div className="body-all">
         <Row>
           <Col xs={12} md={12} lg={6} xl={6} xxl={6}>
@@ -27,10 +27,12 @@ export default function Body() {
             />
           </Col>
           <Col xs={12} md={12} lg={6} xl={6} xxl={6}>
+
             <div className="body_content">
+
               <Image
                 className="star"
-                src={stargreen}
+                src={starblue}
                 fluid
                 alt="Header Connector"
               />
@@ -49,7 +51,7 @@ export default function Body() {
                   <li className="body_list_li"><p className="body_list_text & adrella_text_small">Freelancer</p></li>
                 </ul>
               </div>
-              
+
 
               <div className="body_text">
                 <p className="adrella_text">
