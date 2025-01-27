@@ -27,26 +27,27 @@ export default function Project() {
             alt="body connector"
           />
         </div>
-
         {/* Projects Header */}
-        <div className="project_name">
+        <div className="project_title">
           <div id="text_shadows">Projects</div>
         </div>
       </div>
-      <Row className="mx-3 g-4">
-        <Col xs={12} sm={12} md={6} lg={4} xxl={3} xl={3} className="project-col">
-          <Project1 />
-        </Col>
-        <Col xs={12} sm={12} md={6} lg={4} xxl={3} xl={3} className="project-col">
-          <Project2 />
-        </Col>
-        <Col xs={12} sm={12} md={6} lg={4} xxl={3} xl={3} className="project-col">
-          <Project3 />
-        </Col>
-        <Col xs={12} sm={12} md={6} lg={4} xxl={3} xl={3} className="project-col">
-          <Project4 />
-        </Col>
-      </Row>
+      <div className="project_div">
+        <Row >
+          <Col xs={12} sm={12} md={6} lg={4} xxl={3} xl={3} >
+            <Project1 />
+          </Col>
+          <Col xs={12} sm={12} md={6} lg={4} xxl={3} xl={3}>
+            <Project2 />
+          </Col>
+          <Col xs={12} sm={12} md={6} lg={4} xxl={3} xl={3}>
+            <Project3 />
+          </Col>
+          <Col xs={12} sm={12} md={6} lg={4} xxl={3} xl={3}>
+            <Project4 />
+          </Col>
+        </Row>
+      </div>
     </div>
   );
 }

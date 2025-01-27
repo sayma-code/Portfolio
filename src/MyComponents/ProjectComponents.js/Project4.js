@@ -17,11 +17,10 @@ export default function Project4() {
       <ResizableImage
         src={work1}
         alt="A computer and mobile"
-        width="300px"
-        height="200px"
-        className="project_image"
       /></a>
-      <div className="peackok_heading">Discord Bot</div>
+       <div className="say_hello & project_name">
+       Discord Bot
+      </div>
     </div>
   );
 }

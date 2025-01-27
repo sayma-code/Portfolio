@@ -48,7 +48,7 @@ export default function Body() {
               <div className="body_list">
                 <ul className="body_list_ul">
                   <li className="body_list_li"><p className="body_list_text  & adrella_text_small"> Full-stack</p></li>
-                  <li className="body_list_li"><p className="body_list_text & adrella_text_small">Freelancer</p></li>
+                  <li className="body_list_li"><p className="body_list_text & adrella_text_small">UI/Ux Designer</p></li>
                 </ul>
               </div>
 
@@ -62,6 +62,40 @@ export default function Body() {
                   share more of my story with you.
                 </p>
               </div>
+            </div>
+            <div className="language">
+              <Row >
+                <Col xs={12} md={12} lg={4} xl={4} xxl={4}>
+                  <div>
+                    <p className="language_text">Basic</p>
+                    <p className="language_name"> C</p>
+                    <p className="language_name"> C++</p>
+                    <p className="language_name"> Java</p>
+                    <p className="language_name"> Python</p>
+                    <p className="language_name"> Javascript</p>
+                    <p className="language_name"> Html</p>
+                    <p className="language_name"> CSS</p>
+                    
+                  </div>
+                </Col>
+                <Col xs={12} md={12} lg={4} xl={4} xxl={4}>
+                  <div>
+                    <p className="language_text">Framework</p>
+                    <p className="language_name"> Laravel</p>
+                    <p className="language_name"> React</p>
+                    <p className="language_name"> Angular</p>
+                    <p className="language_name"> SpringBoot</p>
+                  </div>
+                </Col>
+                <Col xs={12} md={12} lg={4} xl={4} xxl={4}>
+                  <div>
+                    <p className="language_text">Others</p>
+                    <p className="language_name"> Git</p>
+                    <p className="language_name"> MySql</p>
+                    <p className="language_name"> Figma</p>
+                  </div>
+                </Col>
+              </Row>
             </div>
           </Col>
         </Row>

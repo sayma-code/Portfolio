@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function ResizableImage({ src, alt, width, height, className, onClick }) {
+export default function ResizableImage({ src, alt, className, onClick }) {
   const style = {
-    width: width || "auto",
-    height: height || "auto",
+    width: "400px",
+    height: "200px",
     objectFit: "cover", // Adjust this as per your needs (e.g., "contain" or "cover")
   };
 
@@ -12,7 +12,7 @@ export default function ResizableImage({ src, alt, width, height, className, onC
       src={src}
       alt={alt}
       style={style}
-      className={className}
+      className="project_image"
       onClick={onClick}
     />
   );

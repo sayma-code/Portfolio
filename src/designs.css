@@ -27,7 +27,11 @@
   font-palette: --HELLO;
   font-family: "Rocher";
 }
-
+.language_name{
+  font-palette: --HELLO;
+  font-family: "Rocher";
+  margin: 0;
+}
 /* Text EFFECT PEACOCK USED IN PROJECT NAME */
 
 .peackok_heading {
@@ -41,6 +45,98 @@
   text-shadow: 1px 1px 2px #082b34;
 }
 
+.language_text {
+  text-shadow: 1px 1px 0 var(--color-secondary),
+    2px 2px var(--color-quaternary), 3px 3px 0 var(--color-quinary);
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: large;
+  margin: 0;
+  color: var(--color-pink);
+  animation: shadowsmall 1.2s ease-in infinite, moves 1.2s ease-in infinite;
+  letter-spacing: 0.2rem; /* Adjusted for better readability */
+  margin-bottom: 1rem;
+}
+
+@keyframes shadowsmall {
+  0% {
+    text-shadow: none;
+  }
+
+  10% {
+    text-shadow: 1px 1px 0 var(--color-secondary);
+  }
+
+  20% {
+    text-shadow: 1px 1px 0 var(--color-secondary),
+      2px 2px 0 var(--color-tertiary);
+  }
+
+  30% {
+    text-shadow: 1px 1px 0 var(--color-secondary),
+      2px 2px 0 var(--color-tertiary), 3px 3px var(--color-quaternary);
+  }
+
+  40% {
+    text-shadow: 1px 1px 0 var(--color-secondary),
+      2px 2px 0 var(--color-tertiary), 3px 3px var(--color-quaternary),
+      4px 4px 0 var(--color-quinary);
+  }
+
+  50% {
+    text-shadow: 1px 1px 0 var(--color-secondary),
+      2px 2px 0 var(--color-tertiary), 3px 3px var(--color-quaternary),
+      4px 4px 0 var(--color-quinary);
+  }
+
+  60% {
+    text-shadow: 1px 1px 0 var(--color-secondary),
+      2px 2px 0 var(--color-tertiary), 3px 3px var(--color-quaternary),
+      4px 4px 0 var(--color-quinary);
+  }
+
+  70% {
+    text-shadow: 1px 1px 0 var(--color-secondary),
+      2px 2px 0 var(--color-tertiary), 3px 3px var(--color-quaternary);
+  }
+
+  80% {
+    text-shadow: 1px 1px 0 var(--color-secondary),
+      2px 2px 0 var(--color-tertiary);
+  }
+
+  90% {
+    text-shadow: 1px 1px 0 var(--color-secondary);
+  }
+
+  100% {
+    text-shadow: none;
+  }
+}
+
+
+@keyframes moves {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  40% {
+    transform: translate(-2px, -2px);
+  }
+
+  50% {
+    transform: translate(-2px, -2px);
+  }
+
+  60% {
+    transform: translate(-2px, -2px);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
 /* DESIGN FOR PROJECT */
 
 #text_shadows {

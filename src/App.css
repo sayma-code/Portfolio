@@ -43,17 +43,10 @@ body,
 }
 
 /* About*/
-
 .about {
   position: relative;
   background: var(--color-light);
-  /* Ensures children can use absolute positioning relative to this */
 }
-
-/* .head {
-  position: relative;
-  z-index: 2;
-} */
 .blob {
   background-color: var(--color-tertiary);
   border-radius: 58% 42% 66% 34% / 49% 42% 58% 51% ;
@@ -67,14 +60,6 @@ body,
   display: block;
 }
 
-/* .body-all {
-  position: relative;
-  margin-top: -30%;
- 
-  z-index: 1;
- 
-} */
-
 .body_content {
   background-color: #D4E2D4;
   padding-left: 1em;
@@ -82,7 +67,7 @@ body,
   border-radius: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   position: relative;
-  z-index: 2;
+  margin: 5%;
   /* Ensures content is not obstructed by overlapping elements */
 }
 
@@ -126,13 +111,37 @@ body,
   position: relative;
 }
 
+.body_list_ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.body_list_li {
+  display: inline;
+  margin-right: 1em;
+}
+
+.body_list_li::before {
+  content: "\2022";
+  font-family: "Rocher";
+  font-palette: --HELLO;
+  color: var(--HELLO);
+  font-size: 1em;
+  margin-right: 0.5em;
+  display: inline-block;
+}
+.body_list_text {
+  display: inline;
+  margin: 0;
+  font-weight: 600;
+  color: #343536;
+}
 .body_text {
   margin: 20px 0px 50px 0px;
 }
-
-.image-for-row {
-  display: flex;
-  justify-content: center;
+.language {
+  margin: 5%;
 }
 
 .project_connector {
@@ -162,34 +171,24 @@ body,
 }
 
 /* Project */
-.project_name {
+.project_title {
   position: relative;
   z-index: 2;
 }
-/*.project-col {
-  border: 5px solid #c2a4f3;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}*/
-
-.body_list {
-  text-align: center;
-  margin-top: 1em;
-  position: relative;
-}
-
-.project_column_div {
-  padding: 10%;
+.project_div{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
 }
 
 .project_image {
   max-width: 100%;
-  border: #d4aee4 5px solid;
+  border: var(--color-blue) 10px solid;
 }
-
-.project_image2 {
-  max-width: 100%;
+.project_name{
+  font-size: larger;
+  text-align: center;
 }
-
 .modal-dialog {
   min-width: 60%;
 }
@@ -392,15 +391,8 @@ body,
   .ballon_container{
     margin-bottom: 10%;
   }
-  .body_list_ul {
-    flex-direction: column; /* Stack items vertically */
-    gap: 1em;
-  }
-  .wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+
+ 
   .project_column_div {
     padding-left: 10%;
     padding-right: 10%;

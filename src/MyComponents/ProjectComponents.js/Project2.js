@@ -17,11 +17,10 @@ export default function Project2() {
       <ResizableImage
         src={work1}
         alt="A computer and mobile"
-        width="300px"
-        height="200px"
-        className="project_image"
       /></a>
-      <div className="peackok_heading">Customer Relation Management</div>
+      <div className="say_hello & project_name">
+      Customer Relation Management
+      </div>
     </div>
   );
 }
