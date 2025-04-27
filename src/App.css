@@ -158,8 +158,8 @@ body,
 /* Balloon image */
 .ballon_image_div {
   position: absolute;
-  top: -100%;
-  left: 30%;
+  top: -90%;
+  left: 32%;
   transform: translateX(-50%);
   z-index: 1;
 }
