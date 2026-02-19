@@ -54,7 +54,7 @@ export default function Contact() {
                   </a>
                 </label>
                 <label className="icon">
-                  <a href="www.linkedin.com/in/saymaobaida">
+                  <a href="https://www.linkedin.com/in/saymaobaida/">
                     <AiFillLinkedin size={50} />
                   </a>
                 </label>
