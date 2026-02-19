@@ -47,8 +47,7 @@ export default function Body() {
               </div>
               <div className="body_list">
                 <ul className="body_list_ul">
-                  <li className="body_list_li"><p className="body_list_text  & adrella_text_small"> Full-stack</p></li>
-                  <li className="body_list_li"><p className="body_list_text & adrella_text_small">UI/Ux Designer</p></li>
+                  <li className="body_list_li"><p className="body_list_text  & adrella_text_small"> Work in Progress</p></li>
                 </ul>
               </div>
 
