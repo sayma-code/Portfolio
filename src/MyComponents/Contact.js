@@ -53,11 +53,7 @@ export default function Contact() {
                     <AiFillGithub size={50} />
                   </a>
                 </label>
-                <label className="icon">
-                  <a href="https://www.linkedin.com/in/saymaobaida/">
-                    <AiFillLinkedin size={50} />
-                  </a>
-                </label>
+                
                 <label className="icon">
                   <a href="https://mail.google.com/mail/u/0/?fs=1&to=saymaobaida2@gmail.com&tf=cm">
                     <MdEmail size={50} />
